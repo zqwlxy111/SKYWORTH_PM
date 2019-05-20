@@ -24,7 +24,6 @@
 				table.render({
 					elem: '#test',
 					url: 'http://172.20.73.16:8080/safe_usercenter/safe/user/getUsersList',
-					// url: 'http://172.20.73.16:8080/safe_usercenter/safe/syss/getSystems',
 					page: { //支持传入 laypage 组件的所有参数（某些参数除外，如：jump/elem） - 详见文档
 						layout: ['limit', 'count', 'prev', 'page', 'next', 'skip'] //自定义分页布局
 							//,curr: 5 //设定初始在第 5 页
@@ -37,13 +36,17 @@
 
 					},
 					response: {
-						statusName: 'total', // 对应 code
-						 // msgName: 'msg', // 对应 msg
-						 // countName: 'total', // 对应 count
+						statusName: 'success', //规定数据状态的字段名称，默认：code
+						statusCode: true, //规定成功的状态码，默认：0
+						msgName: 'msg', // 对应 msg
+						countName: 'total', // 对应 count
 						dataName: 'result' // 对应 data
 					},
 					cols: [
 						[{
+								checkbox: true,
+								fixed: true
+							},{
 							field: 'id',
 							width: 80,
 							title: 'ID',
@@ -52,9 +55,24 @@
 							field: 'name',
 							width: 100,
 							title: '用户名'
+						}, {
+							field: 'realName',
+							width: 100,
+							title: '真实姓名'
+						}, {
+							field: 'rolesStr',
+							width: 100,
+							title: '权限'
+						}, {
+							field: 'systemsStr',
+							width: 100,
+							title: '系统'
+						}, {
+							field: 'departmentsStr',
+							width: 100,
+							title: '所属部门'
 						}]
 					]
-
 				});
 			});
 		</script>
