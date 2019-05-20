@@ -9,10 +9,8 @@
 		<link rel="stylesheet" href="lib/layui/css/layui.css" media="all">
 		<!-- 注意：如果你直接复制所有代码到本地，上述css路径需要改成你本地的 -->
 	</head>
-	<body>
-
+	<body>	
 		<table class="layui-hide" id="test"></table>
-
 
 		<script src="lib/layui/layui.js" charset="utf-8"></script>
 		<!-- 注意：如果你直接复制所有代码到本地，上述js路径需要改成你本地的 -->
@@ -20,10 +18,10 @@
 		<script>
 			layui.use('table', function() {
 				var table = layui.table;
-
+				var no = 0;
 				table.render({
 					elem: '#test',
-					url: 'http://172.20.248.220:8088/dms/mes/dailySixPlan/query?_dc=1558343249271&factory=&lineCode=&model=&module=&screen=&workOrderNo=&orderNo=&st=0&ft=0&start=0',
+					url: 'http://172.20.248.220:8088/dms/mes/dailySixPlan/query?_dc=1558343249271&factory=&lineCode=&model=&module=&screen=&workOrderNo=&orderNo=&st=0&ft=0',
 // 					page: { //支持传入 laypage 组件的所有参数（某些参数除外，如：jump/elem） - 详见文档
 // 						layout: ['limit', 'count', 'prev', 'page', 'next', 'skip'] //自定义分页布局
 // 							//,curr: 5 //设定初始在第 5 页
@@ -35,13 +33,14 @@
 // 						last: false //不显示尾页
 // 
 // 					},
-					page:true,
-					headers: {token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyVG9rZW4iOiJ7XCJpZFwiOjUxLFwibmFtZVwiOlwibGliaW5nbGluXCIsXCJjb2RlXCI6XCJza3kyMDYxOTNcIixcImZpbHRlclwiOm51bGx9In0.ARKC424DcHGGTTQiiO7V6HVCq5Zj1yBMu2JHZTbKjjs'},
+					page: true,
+					headers: {
+						token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyVG9rZW4iOiJ7XCJpZFwiOjUxLFwibmFtZVwiOlwibGliaW5nbGluXCIsXCJjb2RlXCI6XCJza3kyMDYxOTNcIixcImZpbHRlclwiOm51bGx9In0.ARKC424DcHGGTTQiiO7V6HVCq5Zj1yBMu2JHZTbKjjs'
+					},
 					response: {
 						statusCode: true //重新规定成功的状态码为 200，table 组件默认为 0
 					},
 					parseData: function(res) { //res 即为原始返回的数据
-						console.log(res);
 						return {
 							"code": res.success, //解析接口状态
 							"msg": res.msg, //解析提示文本
@@ -49,6 +48,10 @@
 							"data": res.result //解析数据列表
 						};
 					},
+					where: {start:no},
+					height:830, // 设置固定大小的高度
+					limit:50,//默认十条数据一页
+					limits:[10,20,30,50,100],  //数据分页条
 					cols: [
 						[{
 							checkbox: true,
@@ -95,7 +98,18 @@
 							align: 'center',
 							title: '工单结余'
 						}]
-					]
+					],
+					done: function(res, curr, count){
+					//如果是异步请求数据方式，res即为你接口返回的信息。
+					//如果是直接赋值的方式，res即为：{data: [], count: 99} data为当前页数据、count为数据总长度
+					console.log(res);
+    
+					//得到当前页码
+					console.log(curr); 
+    
+					//得到数据总量
+					console.log(count);
+  }
 				});
 			});
 		</script>
