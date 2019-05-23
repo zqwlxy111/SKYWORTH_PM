@@ -10,7 +10,8 @@
 		<meta http-equiv="Cache-Control" content="no-siteapp" />
 		<link rel="stylesheet" href="./css/font.css">
 		<link rel="stylesheet" href="./css/xadmin.css">
-		<!-- <link rel="stylesheet" href="./css/theme5.css"> -->
+		<!-- <link rel="stylesheet" href="./css/theme5.css"> --> 
+		<!-- 调节顶部栏的颜色的css -->
 		<script src="./lib/layui/layui.js" charset="utf-8"></script>
 		<script type="text/javascript" src="./js/xadmin.js"></script>
 		<!-- 让IE8/9支持媒体查询，从而兼容栅格 -->
@@ -30,7 +31,7 @@
 		<!-- 顶部开始 -->
 		<div class="container">
 			<div class="logo">
-				<a href="./test.html">项目管理系统测试版beta v1.0.0</a></div>
+				<a href="./test.html">项目管理系统beta v1.0.0</a></div>
 			<div class="left_open">
 				<a><i title="展开左侧栏" class="iconfont">&#xe699;</i></a>
 			</div>
@@ -82,47 +83,47 @@
 				<ul id="nav">
 					<li>
 						<a href="javascript:;">
-							<i class="iconfont left-nav-li" lay-tips="会员管理">&#xe6b8;</i>
-							<cite>测试</cite>
+							<i class="iconfont left-nav-li" lay-tips="产品项目">&#xe6b8;</i>
+							<cite>产品项目</cite>
 							<i class="iconfont nav_right">&#xe697;</i></a>
 						<ul class="sub-menu">
 							<li>
-								<a onclick="xadmin.add_tab('统计页面','welcome1.html')">
-									<i class="iconfont">&#xe6a7;</i>
-									<cite>测试</cite></a>
-							</li>
-							<li>
-								<a onclick="xadmin.add_tab('会员列表(静态表格)','member-list.html')">
-									<i class="iconfont">&#xe6a7;</i>
-									<cite>静态表格</cite></a>
-							</li>
-							<li>
-								<a onclick="xadmin.add_tab('会员列表(动态表格)','dttable2.html',true)">
-									<i class="iconfont">&#xe6a7;</i>
-									<cite>六日计划(动态表格)</cite></a>
-							</li>
-							<li>
-								<a onclick="xadmin.add_tab('会员删除','member-del.html')">
-									<i class="iconfont">&#xe6a7;</i>
-									<cite>测试</cite></a>
-							</li>
-							<li>
 								<a href="javascript:;">
 									<i class="iconfont">&#xe70b;</i>
-									<cite>测试</cite>
+									<cite>新增产品立项</cite>
 									<i class="iconfont nav_right">&#xe697;</i></a>
 								<ul class="sub-menu">
 									<li>
-										<a onclick="xadmin.add_tab('会员删除','member-del.html')">
+										<a onclick="xadmin.add_tab('内销产品立项','New_Domestic_products.html')">
 											<i class="iconfont">&#xe6a7;</i>
-											<cite>测试</cite></a>
+											<cite>内销产品</cite></a>
 									</li>
 									<li>
-										<a onclick="xadmin.add_tab('等级管理','member-list1.html')">
+										<a onclick="xadmin.add_tab('外销产品立项','New_Export_products.html')">
 											<i class="iconfont">&#xe6a7;</i>
-											<cite>测试</cite></a>
+											<cite>外销产品</cite></a>
+									</li>
+									<li>
+										<a onclick="xadmin.add_tab('B2B产品立项','New_B2B_products.html')">
+											<i class="iconfont">&#xe6a7;</i>
+											<cite>B2B产品</cite></a>
 									</li>
 								</ul>
+							</li>
+							<li>
+								<a onclick="xadmin.add_tab('异常信息报表','member-list.html')">
+									<i class="iconfont">&#xe6a7;</i>
+									<cite>异常信息报表</cite></a>
+							</li>
+							<li>
+								<a onclick="xadmin.add_tab('立项审核','member-del.html')">
+									<i class="iconfont">&#xe6a7;</i>
+									<cite>立项审核</cite></a>
+							</li>
+							<li>
+								<a onclick="xadmin.add_tab('六日计划','dttable2.html',true)">
+									<i class="iconfont">&#xe6a7;</i>
+									<cite>六日计划</cite></a>
 							</li>
 						</ul>
 					</li>

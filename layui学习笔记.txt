@@ -1,0 +1,5 @@
+1. lay-filter="example" 相当于一个layui自身的id选择器
+2. layui-inline 和 layui-block 是定义外部容器的inline和block属性的class
+3. layui-input-block 和 layui-input-inline 是定义的是输入框的inline和block属性的,block占满整个容器的宽，inline为短框。
+4. layui-card是layui面板组件，背景为白色的小卡板
+5. 
