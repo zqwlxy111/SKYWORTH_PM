@@ -1,0 +1,609 @@
+
+//{
+//  "id": 1,
+//  "text": "创维RGB",
+//  "obj": {
+//    "id": 1,
+//    "name": "创维RGB",
+//    "code": "1",
+//    "parentId": null,
+//    "bak": null,
+//    "headOfUnit": 1,
+//    "salveOfUnit": 47,
+//    "status": null,
+//    "parentName": null,
+//    "headOfUnitName": "sa",
+//    "salveOfUnitName": "denglichun"
+//  },
+//  "children": [
+//    {
+//      "id": 2,
+//      "text": "深圳石岩工厂",
+//      "obj": {
+//        "id": 2,
+//        "name": "深圳石岩工厂",
+//        "code": "0755",
+//        "parentId": 1,
+//        "bak": null,
+//        "headOfUnit": null,
+//        "salveOfUnit": null,
+//        "status": null,
+//        "parentName": "创维RGB",
+//        "headOfUnitName": null,
+//        "salveOfUnitName": null
+//      },
+//      "children": [
+//        {
+//          "id": 8,
+//          "text": "自动化设备部",
+//          "obj": {
+//            "id": 8,
+//            "name": "自动化设备部",
+//            "code": "0755",
+//            "parentId": 2,
+//            "bak": null,
+//            "headOfUnit": null,
+//            "salveOfUnit": null,
+//            "status": null,
+//            "parentName": "深圳石岩工厂",
+//            "headOfUnitName": null,
+//            "salveOfUnitName": null
+//          },
+//          "children": [
+//            {
+//              "id": 13,
+//              "text": "智能制造科",
+//              "obj": {
+//                "id": 13,
+//                "name": "智能制造科",
+//                "code": "0755",
+//                "parentId": 8,
+//                "bak": null,
+//                "headOfUnit": null,
+//                "salveOfUnit": null,
+//                "status": null,
+//                "parentName": "自动化设备部",
+//                "headOfUnitName": null,
+//                "salveOfUnitName": null
+//              },
+//              "children": null,
+//              "leaf": true,
+//              "expanded": true
+//            },
+//            {
+//              "id": 14,
+//              "text": "设备管理科",
+//              "obj": {
+//                "id": 14,
+//                "name": "设备管理科",
+//                "code": "0755",
+//                "parentId": 8,
+//                "bak": null,
+//                "headOfUnit": null,
+//                "salveOfUnit": null,
+//                "status": null,
+//                "parentName": "自动化设备部",
+//                "headOfUnitName": null,
+//                "salveOfUnitName": null
+//              },
+//              "children": null,
+//              "leaf": true,
+//              "expanded": true
+//            },
+//            {
+//              "id": 15,
+//              "text": "研发一科",
+//              "obj": {
+//                "id": 15,
+//                "name": "研发一科",
+//                "code": "0755",
+//                "parentId": 8,
+//                "bak": null,
+//                "headOfUnit": null,
+//                "salveOfUnit": null,
+//                "status": null,
+//                "parentName": "自动化设备部",
+//                "headOfUnitName": null,
+//                "salveOfUnitName": null
+//              },
+//              "children": null,
+//              "leaf": true,
+//              "expanded": true
+//            }
+//          ],
+//          "leaf": false,
+//          "expanded": true
+//        },
+//        {
+//          "id": 9,
+//          "text": "工程技术部",
+//          "obj": {
+//            "id": 9,
+//            "name": "工程技术部",
+//            "code": "0755",
+//            "parentId": 2,
+//            "bak": null,
+//            "headOfUnit": null,
+//            "salveOfUnit": null,
+//            "status": null,
+//            "parentName": "深圳石岩工厂",
+//            "headOfUnitName": null,
+//            "salveOfUnitName": null
+//          },
+//          "children": null,
+//          "leaf": true,
+//          "expanded": true
+//        },
+//        {
+//          "id": 10,
+//          "text": "质量管理部",
+//          "obj": {
+//            "id": 10,
+//            "name": "质量管理部",
+//            "code": "0755",
+//            "parentId": 2,
+//            "bak": null,
+//            "headOfUnit": null,
+//            "salveOfUnit": null,
+//            "status": null,
+//            "parentName": "深圳石岩工厂",
+//            "headOfUnitName": null,
+//            "salveOfUnitName": null
+//          },
+//          "children": null,
+//          "leaf": true,
+//          "expanded": true
+//        },
+//        {
+//          "id": 11,
+//          "text": "物流管理部",
+//          "obj": {
+//            "id": 11,
+//            "name": "物流管理部",
+//            "code": "0755",
+//            "parentId": 2,
+//            "bak": null,
+//            "headOfUnit": null,
+//            "salveOfUnit": null,
+//            "status": null,
+//            "parentName": "深圳石岩工厂",
+//            "headOfUnitName": null,
+//            "salveOfUnitName": null
+//          },
+//          "children": null,
+//          "leaf": true,
+//          "expanded": true
+//        },
+//        {
+//          "id": 12,
+//          "text": "计划物控部",
+//          "obj": {
+//            "id": 12,
+//            "name": "计划物控部",
+//            "code": "0755",
+//            "parentId": 2,
+//            "bak": null,
+//            "headOfUnit": null,
+//            "salveOfUnit": null,
+//            "status": null,
+//            "parentName": "深圳石岩工厂",
+//            "headOfUnitName": null,
+//            "salveOfUnitName": null
+//          },
+//          "children": null,
+//          "leaf": true,
+//          "expanded": true
+//        }
+//      ],
+//      "leaf": false,
+//      "expanded": true
+//    },
+//    {
+//      "id": 3,
+//      "text": "南京工厂",
+//      "obj": {
+//        "id": 3,
+//        "name": "南京工厂",
+//        "code": "0755",
+//        "parentId": 1,
+//        "bak": null,
+//        "headOfUnit": null,
+//        "salveOfUnit": null,
+//        "status": null,
+//        "parentName": "创维RGB",
+//        "headOfUnitName": null,
+//        "salveOfUnitName": null
+//      },
+//      "children": null,
+//      "leaf": true,
+//      "expanded": true
+//    },
+//    {
+//      "id": 4,
+//      "text": "江西工厂",
+//      "obj": {
+//        "id": 4,
+//        "name": "江西工厂",
+//        "code": "0755",
+//        "parentId": 1,
+//        "bak": null,
+//        "headOfUnit": null,
+//        "salveOfUnit": null,
+//        "status": null,
+//        "parentName": "创维RGB",
+//        "headOfUnitName": null,
+//        "salveOfUnitName": null
+//      },
+//      "children": null,
+//      "leaf": true,
+//      "expanded": true
+//    },
+//    {
+//      "id": 5,
+//      "text": "内蒙工厂",
+//      "obj": {
+//        "id": 5,
+//        "name": "内蒙工厂",
+//        "code": "0755",
+//        "parentId": 1,
+//        "bak": null,
+//        "headOfUnit": null,
+//        "salveOfUnit": null,
+//        "status": null,
+//        "parentName": "创维RGB",
+//        "headOfUnitName": null,
+//        "salveOfUnitName": null
+//      },
+//      "children": null,
+//      "leaf": true,
+//      "expanded": true
+//    },
+//    {
+//      "id": 6,
+//      "text": "广州工厂",
+//      "obj": {
+//        "id": 6,
+//        "name": "广州工厂",
+//        "code": "0755",
+//        "parentId": 1,
+//        "bak": null,
+//        "headOfUnit": null,
+//        "salveOfUnit": null,
+//        "status": null,
+//        "parentName": "创维RGB",
+//        "headOfUnitName": null,
+//        "salveOfUnitName": null
+//      },
+//      "children": null,
+//      "leaf": true,
+//      "expanded": true
+//    },
+//    {
+//      "id": 7,
+//      "text": "印尼海外工厂",
+//      "obj": {
+//        "id": 7,
+//        "name": "印尼海外工厂",
+//        "code": "0755",
+//        "parentId": 1,
+//        "bak": null,
+//        "headOfUnit": null,
+//        "salveOfUnit": null,
+//        "status": null,
+//        "parentName": "创维RGB",
+//        "headOfUnitName": null,
+//        "salveOfUnitName": null
+//      },
+//      "children": null,
+//      "leaf": true,
+//      "expanded": true
+//    }
+//  ],
+//  "leaf": false,
+//  "expanded": true
+//},
+
+
+{
+  "id": 1,
+  "text": "创维RGB",
+  "obj": {
+    "id": 1,
+    "name": "创维RGB",
+    "code": "1",
+    "parentId": null,
+    "bak": null,
+    "headOfUnit": 1,
+    "salveOfUnit": 47,
+    "status": 1,
+    "parentName": null,
+    "headOfUnitName": "sa",
+    "salveOfUnitName": "denglichun"
+  },
+  "children": [
+    {
+      "id": 2,
+      "text": "深圳石岩基地",
+      "obj": {
+        "id": 2,
+        "name": "深圳石岩基地",
+        "code": "0755",
+        "parentId": 1,
+        "bak": null,
+        "headOfUnit": null,
+        "salveOfUnit": null,
+        "status": 1,
+        "parentName": "创维RGB",
+        "headOfUnitName": null,
+        "salveOfUnitName": null
+      },
+      "children": [
+        {
+          "id": 8,
+          "text": "自动化设备部",
+          "obj": {
+            "id": 8,
+            "name": "自动化设备部",
+            "code": "0755",
+            "parentId": 2,
+            "bak": null,
+            "headOfUnit": null,
+            "salveOfUnit": null,
+            "status": 1,
+            "parentName": "深圳石岩基地",
+            "headOfUnitName": null,
+            "salveOfUnitName": null
+          },
+          "children": [
+            {
+              "id": 13,
+              "text": "智能制造科",
+              "obj": {
+                "id": 13,
+                "name": "智能制造科",
+                "code": "0755",
+                "parentId": 8,
+                "bak": null,
+                "headOfUnit": null,
+                "salveOfUnit": null,
+                "status": 1,
+                "parentName": "自动化设备部",
+                "headOfUnitName": null,
+                "salveOfUnitName": null
+              },
+              "children": null,
+              "leaf": true,
+              "expanded": true
+            },
+            {
+              "id": 14,
+              "text": "设备管理科",
+              "obj": {
+                "id": 14,
+                "name": "设备管理科",
+                "code": "0755",
+                "parentId": 8,
+                "bak": null,
+                "headOfUnit": null,
+                "salveOfUnit": null,
+                "status": 1,
+                "parentName": "自动化设备部",
+                "headOfUnitName": null,
+                "salveOfUnitName": null
+              },
+              "children": null,
+              "leaf": true,
+              "expanded": true
+            },
+            {
+              "id": 15,
+              "text": "研发一科",
+              "obj": {
+                "id": 15,
+                "name": "研发一科",
+                "code": "0755",
+                "parentId": 8,
+                "bak": null,
+                "headOfUnit": null,
+                "salveOfUnit": null,
+                "status": 1,
+                "parentName": "自动化设备部",
+                "headOfUnitName": null,
+                "salveOfUnitName": null
+              },
+              "children": null,
+              "leaf": true,
+              "expanded": true
+            }
+          ],
+          "leaf": false,
+          "expanded": true
+        },
+        {
+          "id": 9,
+          "text": "工程技术部",
+          "obj": {
+            "id": 9,
+            "name": "工程技术部",
+            "code": "0755",
+            "parentId": 2,
+            "bak": null,
+            "headOfUnit": null,
+            "salveOfUnit": null,
+            "status": 1,
+            "parentName": "深圳石岩基地",
+            "headOfUnitName": null,
+            "salveOfUnitName": null
+          },
+          "children": null,
+          "leaf": true,
+          "expanded": true
+        },
+        {
+          "id": 10,
+          "text": "质量管理部",
+          "obj": {
+            "id": 10,
+            "name": "质量管理部",
+            "code": "0755",
+            "parentId": 2,
+            "bak": null,
+            "headOfUnit": null,
+            "salveOfUnit": null,
+            "status": 1,
+            "parentName": "深圳石岩基地",
+            "headOfUnitName": null,
+            "salveOfUnitName": null
+          },
+          "children": null,
+          "leaf": true,
+          "expanded": true
+        },
+        {
+          "id": 11,
+          "text": "物流管理部",
+          "obj": {
+            "id": 11,
+            "name": "物流管理部",
+            "code": "0755",
+            "parentId": 2,
+            "bak": null,
+            "headOfUnit": null,
+            "salveOfUnit": null,
+            "status": 1,
+            "parentName": "深圳石岩基地",
+            "headOfUnitName": null,
+            "salveOfUnitName": null
+          },
+          "children": null,
+          "leaf": true,
+          "expanded": true
+        },
+        {
+          "id": 12,
+          "text": "计划物控部",
+          "obj": {
+            "id": 12,
+            "name": "计划物控部",
+            "code": "0755",
+            "parentId": 2,
+            "bak": null,
+            "headOfUnit": null,
+            "salveOfUnit": null,
+            "status": 1,
+            "parentName": "深圳石岩基地",
+            "headOfUnitName": null,
+            "salveOfUnitName": null
+          },
+          "children": null,
+          "leaf": true,
+          "expanded": true
+        }
+      ],
+      "leaf": false,
+      "expanded": true
+    },
+    {
+      "id": 3,
+      "text": "南京基地",
+      "obj": {
+        "id": 3,
+        "name": "南京基地",
+        "code": "0755",
+        "parentId": 1,
+        "bak": null,
+        "headOfUnit": null,
+        "salveOfUnit": null,
+        "status": 1,
+        "parentName": "创维RGB",
+        "headOfUnitName": null,
+        "salveOfUnitName": null
+      },
+      "children": null,
+      "leaf": true,
+      "expanded": true
+    },
+    {
+      "id": 4,
+      "text": "江西基地",
+      "obj": {
+        "id": 4,
+        "name": "江西基地",
+        "code": "0755",
+        "parentId": 1,
+        "bak": null,
+        "headOfUnit": null,
+        "salveOfUnit": null,
+        "status": 1,
+        "parentName": "创维RGB",
+        "headOfUnitName": null,
+        "salveOfUnitName": null
+      },
+      "children": null,
+      "leaf": true,
+      "expanded": true
+    },
+    {
+      "id": 5,
+      "text": "内蒙基地",
+      "obj": {
+        "id": 5,
+        "name": "内蒙基地",
+        "code": "0755",
+        "parentId": 1,
+        "bak": null,
+        "headOfUnit": null,
+        "salveOfUnit": null,
+        "status": 1,
+        "parentName": "创维RGB",
+        "headOfUnitName": null,
+        "salveOfUnitName": null
+      },
+      "children": null,
+      "leaf": true,
+      "expanded": true
+    },
+    {
+      "id": 6,
+      "text": "广州基地",
+      "obj": {
+        "id": 6,
+        "name": "广州基地",
+        "code": "0755",
+        "parentId": 1,
+        "bak": null,
+        "headOfUnit": null,
+        "salveOfUnit": null,
+        "status": 1,
+        "parentName": "创维RGB",
+        "headOfUnitName": null,
+        "salveOfUnitName": null
+      },
+      "children": null,
+      "leaf": true,
+      "expanded": true
+    },
+    {
+      "id": 7,
+      "text": "印尼海外基地",
+      "obj": {
+        "id": 7,
+        "name": "印尼海外基地",
+        "code": "0755",
+        "parentId": 1,
+        "bak": null,
+        "headOfUnit": null,
+        "salveOfUnit": null,
+        "status": 1,
+        "parentName": "创维RGB",
+        "headOfUnitName": null,
+        "salveOfUnitName": null
+      },
+      "children": null,
+      "leaf": true,
+      "expanded": true
+    }
+  ],
+  "leaf": false,
+  "expanded": true
+}
