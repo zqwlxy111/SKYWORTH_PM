@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>layui</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="lib/layui/css/layui.css" media="all">
+    <!-- 注意：如果你直接复制所有代码到本地，上述css路径需要改成你本地的 -->
+    <link rel="stylesheet" href="css/eleTree.css" media="all">
+    <style>
+        html,body{
+            width: 80%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 15px 0px 30px 0px;
+        }
+        .eleTree{
+            width: 350px;
+            height: 300px;
+            border: 1px solid #ccc;
+            overflow: hidden;
+        }
+        .red{
+            color: #ff4200;
+        }
+        .blue{
+            color: #01AAED;
+        }
+        a:hover{
+            color: #01AAED;
+        }
+
+        .nav{
+            position: fixed;
+            right: 25px;
+            top: calc(50% - 120px);
+            border: 1px solid #d2d2d2;
+            background-color:#fff;
+            z-index: 100000;
+        }
+        .nav-title{
+            background-color: #F8F8F8;
+            padding:0 80px 0 20px;
+            margin: 0px;
+            height: 42px;
+            line-height: 42px;
+            border-bottom: 1px solid #eee;
+        }
+        .nav ul{
+            padding:10px 0px 10px 35px;
+        }
+        .nav ul li{
+            padding: 5px 0px;
+            list-style-type: decimal;
+        }
+        .nav ul a{
+            color: #333;
+            font-size: 14px;
+            text-decoration: none;
+        }
+    </style>
+
+</head>
+<body>
+<div class="content1">
+    <div class="eleTree ele1" lay-filter="data1"></div>
+    <h3>下面就是它对应的代码：</h3>
+    <pre class="layui-code pre1">
+<!-- <div class="eleTree ele1"></div> -->
+eleTree.render({
+    elem: '.ele1',
+    data: [
+        {
+            id: 1,
+            label: "安徽省",
+            children: [
+                {
+                    id: 2,
+                    label: "马鞍山市",
+                    disabled: true,
+                    children: [
+                        {
+                            id: 3,
+                            label: "和县",
+                        },
+                        {
+                            id: 4,
+                            label: "花山区",
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            id: 5,
+            label: "河南省",
+            children: [
+                {
+                    id: 6,
+                    label: "郑州市"
+                }
+            ]
+        }
+    ],
+    showCheckbox: true,
+});
+        </pre>
+</div>
+
+<script src="lib/layui/layui.js" charset="utf-8"></script>
+<!-- 注意：如果你直接复制所有代码到本地，上述js路径需要改成你本地的 -->
+
+<script>
+
+    layui.config({
+        base: "lib/layui/lay/mymodules/"
+    }).use(['jquery','table','eleTree','code'], function(){
+        var $ = layui.jquery;
+        var eleTree = layui.eleTree;
+        var table = layui.table;
+        var code = layui.code;
+
+        // var data=[
+        //     {
+        //         id: 1,
+        //         label: "安徽省",
+        //         children: [
+        //             {
+        //                 id: 2,
+        //                 label: "马鞍山市",
+        //                 disabled: true,
+        //                 children: [
+        //                     {
+        //                         id: 3,
+        //                         label: "和县",
+        //                     },
+        //                     {
+        //                         id: 4,
+        //                         label: "花山区",
+        //                     }
+        //                 ]
+        //             }
+        //         ]
+        //     },
+        //     {
+        //         id: 5,
+        //         label: "河南省",
+        //         children: [
+        //             {
+        //                 id: 6,
+        //                 label: "郑州市"
+        //             }
+        //         ]
+        //     }
+        // ];
+
+        eleTree.render({
+            elem: '.ele1',
+            url: 'http://172.20.73.16:8080/safe_usercenter/safe/department/getDepartmentTree',
+            showCheckbox: true,
+            request: {
+                name: "text",
+                key: "id",
+                children: "children",
+                checked: "checked",
+                isLeaf: "leaf"
+            }
+        });
+        layui.code({elem: ".pre1",about: true,title: "对应的代码",encode: true});
+        layui.code({elem: ".req1",about: true,title: "code",encode: true});
+
+    });
+</script>
+
+</body>
+</html>
