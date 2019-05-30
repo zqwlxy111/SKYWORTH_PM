@@ -122,52 +122,23 @@ eleTree.render({
         var table = layui.table;
         var code = layui.code;
 
-        // var data=[
-        //     {
-        //         id: 1,
-        //         label: "安徽省",
-        //         children: [
-        //             {
-        //                 id: 2,
-        //                 label: "马鞍山市",
-        //                 disabled: true,
-        //                 children: [
-        //                     {
-        //                         id: 3,
-        //                         label: "和县",
-        //                     },
-        //                     {
-        //                         id: 4,
-        //                         label: "花山区",
-        //                     }
-        //                 ]
-        //             }
-        //         ]
-        //     },
-        //     {
-        //         id: 5,
-        //         label: "河南省",
-        //         children: [
-        //             {
-        //                 id: 6,
-        //                 label: "郑州市"
-        //             }
-        //         ]
-        //     }
-        // ];
-
-        eleTree.render({
-            elem: '.ele1',
-            url: 'http://172.20.73.16:8080/safe_usercenter/safe/department/getDepartmentTree',
-            showCheckbox: true,
-            request: {
-                name: "text",
-                key: "id",
-                children: "children",
-                checked: "checked",
-                isLeaf: "leaf"
+        $.ajax({
+            type : "GET",
+            url : "http://172.20.73.16:8080/safe_usercenter/safe/department/getDepartmentTree",
+            success : function (res) {
+                console.log(res);
+                //初始化树
+                eleTree.render({
+                    elem: '.ele1',
+                    data: [res],
+                    request: {name: "text"}, // 这里指定了返回的数据格式，组件会根据这些值来替换返回JSON中的指定格式，从而读取信息
+                    done: function (res) {
+                        console.log(res);
+                    }
+                });
             }
         });
+
         layui.code({elem: ".pre1",about: true,title: "对应的代码",encode: true});
         layui.code({elem: ".req1",about: true,title: "code",encode: true});
 

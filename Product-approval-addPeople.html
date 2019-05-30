@@ -10,12 +10,30 @@
 
     <link rel="stylesheet" href="lib/layui/css/layui.css" media="all">
     <!-- 注意：如果你直接复制所有代码到本地，上述css路径需要改成你本地的 -->
-
+    <link rel="stylesheet" href="css/dtree.css" media="all">
+    <link rel="stylesheet" href="css/dtreefont.css" media="all">
 
     <!--[if lt IE 9]>
     <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
     <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style type="text/css">
+        .select-test {
+            position: absolute;
+            max-height: 500px;
+            height: 350px;
+            overflow: auto;
+            width: 100%;
+            z-index: 123;
+            display: none;
+            border: 1px solid silver;
+            top: 42px;
+        }
+
+        .layui-show {
+            display: block !important;
+        }
+    </style>
 
 </head>
 <body>
@@ -24,11 +42,11 @@
 <form class="layui-form layui-form-pane" action="">
     <div class="layui-form-item">
         <label class="layui-form-label">所属模块</label>
-        <div class="layui-input-inline">
+        <div class="layui-input-inline" style="width: 60%">
             <select name="interest" lay-filter="moduleChoice">
                 <option value=""></option>
                 <option value="0" selected="">业务模块</option>
-                <option value="1" >计划模块</option>
+                <option value="1">计划模块</option>
                 <option value="2">质量模块</option>
                 <option value="3">工程模块</option>
                 <option value="4">生产模块</option>
@@ -38,110 +56,167 @@
 </form>
 
 <!--部门选择-->
-<form class="layui-form layui-form-pane" action="">
+<div class="layui-form layui-form-pane">
     <div class="layui-form-item">
-        <label class="layui-form-label">部门选择</label>
-        <div class="layui-input-inline">
-            <select name="interest" lay-filter="departmentChoice">
-                <option value=""></option>
-                <option value="0" >人力资源部</option>
-                <option value="1" selected="">智能设备部</option>
-                <option value="2">工程技术部</option>
-                <option value="3">质量管理部</option>
-                <option value="4">计划物控部</option>
-                <option value="5">平板厂</option>
-                <option value="6">海外厂</option>
-            </select>
+        <label class="layui-form-label">所属部门</label>
+        <div class="layui-input-inline" style="width: 60%">
+            <div class="layui-unselect layui-form-select" id="departmentChoice">
+                <div class="layui-select-title">
+                    <input type="text" name="department" id="input_department" placeholder="请选择" readonly=""
+                           class="layui-input layui-unselect">
+                    <i class="layui-edge"></i>
+                </div>
+            </div>
+            <div class="layui-card select-test" id="departmentChoice-select">
+                <div class="layui-card-body">
+                    <div id="toolbarDiv1">
+                        <ul id="slTree1" class="dtree" data-id="0" style="width: 100%;"></ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</form>
+</div>
 
 <!--人员选择-->
-<form class="layui-form layui-form-pane" action="">
+<div class="layui-form layui-form-pane">
     <div class="layui-form-item">
-        <label class="layui-form-label">人员选择</label>
-        <div class="layui-input-inline">
-            <select name="interest" lay-filter="peopleChoice">
-                <option value=""></option>
-                <option value="0" >人力资源部</option>
-                <option value="1" selected="">智能设备部</option>
-                <option value="2">工程技术部</option>
-                <option value="3">质量管理部</option>
-                <option value="4">计划物控部</option>
-                <option value="5">平板厂</option>
-                <option value="6">海外厂</option>
-            </select>
+        <label class="layui-form-label">部门人员</label>
+        <div class="layui-input-inline" style="width: 60%">
+            <div class="layui-unselect layui-form-select" id="departmentPeopleChoice">
+                <div class="layui-select-title">
+                    <input type="text" name="departmentPeople" id="input_departmentPeople" placeholder="请选择" readonly=""
+                           class="layui-input layui-unselect">
+                    <i class="layui-edge"></i>
+                </div>
+            </div>
+            <div class="layui-card select-test" id="departmentPeopleChoice-select">
+                <div class="layui-card-body">
+                    <div id="toolbarDiv2">
+                        <ul id="slTree2" class="dtree" data-id="0" style="width: 100%;"></ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</form>
+</div>
 
 </body>
 <script src="lib/layui/layui.js" charset="utf-8"></script>
 <!-- 注意：如果你直接复制所有代码到本地，上述js路径需要改成你本地的 -->
 
 <script>
-    layui.use(['form', 'layedit', 'laydate'], function () {
-        var form = layui.form
-            , layer = layui.layer
-            , layedit = layui.layedit
-            , laydate = layui.laydate;
 
-        //日期
-        laydate.render({
-            elem: '#date'
-        });
-        laydate.render({
-            elem: '#date1'
-        });
+    layui.config({
+        base: "lib/layui/lay/mymodules/"
+    }).use(['dtree', 'layer', 'jquery'], function () {
+        var dtree = layui.dtree, layer = layui.layer, $ = layui.jquery;
 
-        //创建一个编辑器
-        var editIndex = layedit.build('LAY_demo_editor');
-
-        //自定义验证规则
-        form.verify({
-            title: function (value) {
-                if (value.length < 5) {
-                    return '标题至少得5个字符啊';
-                }
+        $.ajax({
+            type: "GET",
+            url: "http://172.20.73.16:8080/safe_usercenter/safe/department/getDepartmentTree",
+            success: function (res) {
+                console.log(res);
+                //初始化树
+                var DTree = dtree.render({
+                    elem: "#slTree1",
+                    data: [res],
+                    response: {title: "text"}, // 这里指定了返回的数据格式，组件会根据这些值来替换返回JSON中的指定格式，从而读取信息
+                    // ficon: "-1",  // 隐藏一级图标
+                    // dot: false,  // 隐藏小圆点
+                    icon: -1,
+                    accordion: true,
+                    done: function (res) {
+                        console.log(res);
+                        console.log("libinglin shi zui shuai de !")
+                    }
+                });
+                $("#departmentChoice").on("click", function () {
+                    $(this).toggleClass("layui-form-selected");
+                    $("#departmentChoice-select").toggleClass("layui-show layui-anim layui-anim-upbit");
+                });
+                dtree.on("node(slTree1)", function (obj) {
+                    $("#input_department").val(obj.param.context);
+                    $("#depatment").toggleClass("layui-form-selected");
+                    $("#departmentChoice-select").toggleClass("layui-show layui-anim layui-anim-upbit");
+                });
+                // $("#departmentPeopleChoice").on("click", function () {
+                //     $(this).toggleClass("layui-form-selected");
+                //     $("#departmentPeopleChoice-select").toggleClass("layui-show layui-anim layui-anim-upbit");
+                // });
+                // dtree.on("node(slTree1)", function (obj) {
+                //     $("#input_departmentPeople").val(obj.param.context);
+                //     $("#depatmentPeople").toggleClass("layui-form-selected");
+                //     $("#departmentPeopleChoice-select").toggleClass("layui-show layui-anim layui-anim-upbit");
+                // });
             }
-            , pass: [
-                /^[\S]{6,12}$/
-                , '密码必须6到12位，且不能出现空格'
-            ]
-            , content: function (value) {
-                layedit.sync(editIndex);
-            }
         });
-
-        //监听指定开关
-        form.on('switch(switchTest)', function (data) {
-            layer.msg('开关checked：' + (this.checked ? 'true' : 'false'), {
-                offset: '6px'
-            });
-            layer.tips('温馨提示：请注意开关状态的文字可以随意定义，而不仅仅是ON|OFF', data.othis)
-        });
-
-        //监听提交
-        form.on('submit(demo1)', function (data) {
-            layer.alert(JSON.stringify(data.field), {
-                title: '最终的提交信息'
-            })
-            return false;
-        });
-
-        //表单初始赋值
-        form.val('example', {
-            "username": "贤心" // "name": "value"
-            , "password": "123456"
-            , "interest": 1
-            , "like[write]": true //复选框选中状态
-            , "close": true //开关状态
-            , "sex": "女"
-            , "desc": "我爱 layui"
-        })
-
-
     });
 </script>
+
+<!--<script>-->
+<!--    layui.use(['form', 'layedit', 'laydate'], function () {-->
+<!--        var form = layui.form-->
+<!--            , layer = layui.layer-->
+<!--            , layedit = layui.layedit-->
+<!--            , laydate = layui.laydate;-->
+
+<!--        //日期-->
+<!--        laydate.render({-->
+<!--            elem: '#date'-->
+<!--        });-->
+<!--        laydate.render({-->
+<!--            elem: '#date1'-->
+<!--        });-->
+
+<!--        //创建一个编辑器-->
+<!--        var editIndex = layedit.build('LAY_demo_editor');-->
+
+<!--        //自定义验证规则-->
+<!--        form.verify({-->
+<!--            title: function (value) {-->
+<!--                if (value.length < 5) {-->
+<!--                    return '标题至少得5个字符啊';-->
+<!--                }-->
+<!--            }-->
+<!--            , pass: [-->
+<!--                /^[\S]{6,12}$/-->
+<!--                , '密码必须6到12位，且不能出现空格'-->
+<!--            ]-->
+<!--            , content: function (value) {-->
+<!--                layedit.sync(editIndex);-->
+<!--            }-->
+<!--        });-->
+
+<!--        //监听指定开关-->
+<!--        form.on('switch(switchTest)', function (data) {-->
+<!--            layer.msg('开关checked：' + (this.checked ? 'true' : 'false'), {-->
+<!--                offset: '6px'-->
+<!--            });-->
+<!--            layer.tips('温馨提示：请注意开关状态的文字可以随意定义，而不仅仅是ON|OFF', data.othis)-->
+<!--        });-->
+
+<!--        //监听提交-->
+<!--        form.on('submit(demo1)', function (data) {-->
+<!--            layer.alert(JSON.stringify(data.field), {-->
+<!--                title: '最终的提交信息'-->
+<!--            })-->
+<!--            return false;-->
+<!--        });-->
+
+<!--        //表单初始赋值-->
+<!--        form.val('example', {-->
+<!--            "username": "贤心" // "name": "value"-->
+<!--            , "password": "123456"-->
+<!--            , "interest": 1-->
+<!--            , "like[write]": true //复选框选中状态-->
+<!--            , "close": true //开关状态-->
+<!--            , "sex": "女"-->
+<!--            , "desc": "我爱 layui"-->
+<!--        })-->
+
+
+<!--    });-->
+<!--</script>-->
 
 </html>

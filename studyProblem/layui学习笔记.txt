@@ -3,3 +3,4 @@
 3. layui-input-block 和 layui-input-inline 是定义的是输入框的inline和block属性的,block占满整个容器的宽，inline为短框。
 4. layui-card是layui面板组件，背景为白色的小卡板
 5. layui扩展组件的只需要用layui.config({base:''}).use();务必记住base写的是组件js的存放的根目录，后面必须带有/，不然报错！
+6. jquery的ajax异步请求接收返回json数据方法设置简单，一个是服务器处理程序是返回json数据，另一种就是ajax发送设置的datatype设置为jsonp格式数据或json格式都可以。
