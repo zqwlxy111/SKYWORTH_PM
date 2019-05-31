@@ -7,9 +7,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6ba59dc0-2a53-4c9e-bf04-bf7dd5821a3c" name="默认更改列表" comment="">
       <change beforePath="$PROJECT_DIR$/Product-approval-addPeople.html" beforeDir="false" afterPath="$PROJECT_DIR$/Product-approval-addPeople.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eleTreeTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/eleTreeTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jons/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/jons/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studyProblem/layui学习笔记.txt" beforeDir="false" afterPath="$PROJECT_DIR$/studyProblem/layui学习笔记.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studyProblem/调试接口.txt" beforeDir="false" afterPath="$PROJECT_DIR$/studyProblem/调试接口.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,14 +22,14 @@
     <favorites_list name="SKYWORTH_PM" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.37447917">
+    <splitter split-orientation="horizontal" split-proportion="0.7395833">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/jons/tsconfig.json">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="132">
-                  <caret line="610" column="13" lean-forward="true" selection-start-line="610" selection-start-column="13" selection-end-line="610" selection-end-column="13" />
+                <state>
+                  <caret line="610" column="13" selection-start-line="610" selection-start-column="13" selection-end-line="610" selection-end-column="13" />
                 </state>
               </provider>
             </entry>
@@ -53,8 +51,17 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/studyProblem/调试接口.txt">
               <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="700">
+                  <caret line="50" column="58" selection-start-line="50" selection-start-column="58" selection-end-line="50" selection-end-column="58" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/studyProblem/根据systemid查询角色列表.json">
+              <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="560">
-                  <caret line="28" column="109" selection-start-line="28" selection-end-line="28" selection-end-column="109" />
+                  <caret line="28" selection-start-line="28" selection-end-line="28" />
                 </state>
               </provider>
             </entry>
@@ -66,15 +73,17 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Product-approval-addPeople.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1030">
-                  <caret line="150" column="22" lean-forward="true" selection-start-line="150" selection-start-column="22" selection-end-line="150" selection-end-column="22" />
+                <state relative-caret-position="952">
+                  <caret line="156" column="13" selection-start-line="156" selection-start-column="13" selection-end-line="156" selection-end-column="13" />
                   <folding>
                     <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
                     <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
                     <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="e#4216#6061#0" />
                   </folding>
                 </state>
               </provider>
@@ -84,7 +93,7 @@
             <entry file="file://$PROJECT_DIR$/dtreeTest.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="420">
-                  <caret line="48" column="52" lean-forward="true" selection-start-line="48" selection-start-column="52" selection-end-line="48" selection-end-column="52" />
+                  <caret line="48" column="52" selection-start-line="48" selection-start-column="52" selection-end-line="48" selection-end-column="52" />
                 </state>
               </provider>
             </entry>
@@ -96,9 +105,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="tsconfig.json" />
         <option value="LayUI-Html" />
         <option value="HTML File" />
+        <option value="tsconfig.json" />
       </list>
     </option>
   </component>
@@ -127,9 +136,17 @@
         <option value="$PROJECT_DIR$/lib/layui/lay/mymodules/eleTree.js" />
         <option value="$PROJECT_DIR$/studyProblem/layui学习笔记.txt" />
         <option value="$PROJECT_DIR$/eleTreeTest.html" />
-        <option value="$PROJECT_DIR$/Product-approval-addPeople.html" />
         <option value="$PROJECT_DIR$/jons/tsconfig.json" />
         <option value="$PROJECT_DIR$/dtreeTest.html" />
+        <option value="$PROJECT_DIR$/Product-approval-addPeople.html" />
+        <option value="$PROJECT_DIR$/studyProblem/接口数据地址和内容.json" />
+        <option value="$PROJECT_DIR$/studyProblem/tsconfig.json" />
+        <option value="$PROJECT_DIR$/studyProblem/获取部门树.json" />
+        <option value="$PROJECT_DIR$/studyProblem/根据systemid查询角色列表.json" />
+        <option value="$PROJECT_DIR$/studyProblem/获取部门树2.json" />
+        <option value="$PROJECT_DIR$/studyProblem/获取部门树3.json" />
+        <option value="$PROJECT_DIR$/studyProblem/修改用户状态.json" />
+        <option value="$PROJECT_DIR$/studyProblem/调试接口.txt" />
       </list>
     </option>
   </component>
@@ -158,7 +175,10 @@
       <showMembers ProjectPane="false" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -215,11 +235,12 @@
       <workItem from="1559114166086" duration="7118000" />
       <workItem from="1559123883237" duration="5000" />
       <workItem from="1559175056303" duration="20647000" />
+      <workItem from="1559265255624" duration="8200000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61559000" />
+    <option name="totallyTimeSpent" value="69759000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -471,13 +492,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/studyProblem/layui学习笔记.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="100" selection-start-line="5" selection-start-column="100" selection-end-line="5" selection-end-column="100" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/eleTreeTest.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="632">
@@ -517,32 +531,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/jons/tsconfig.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="610" column="13" selection-start-line="610" selection-start-column="13" selection-end-line="610" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/dtreeTest.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
-          <caret line="48" column="52" lean-forward="true" selection-start-line="48" selection-start-column="52" selection-end-line="48" selection-end-column="52" />
+          <caret line="48" column="52" selection-start-line="48" selection-start-column="52" selection-end-line="48" selection-end-column="52" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Product-approval-addPeople.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1030">
-          <caret line="150" column="22" lean-forward="true" selection-start-line="150" selection-start-column="22" selection-end-line="150" selection-end-column="22" />
+        <state relative-caret-position="952">
+          <caret line="156" column="13" selection-start-line="156" selection-start-column="13" selection-end-line="156" selection-end-column="13" />
           <folding>
             <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#4216#6061#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jons/tsconfig.json">
+    <entry file="file://$PROJECT_DIR$/eleTree/tsconfig.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eleTree/tree.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/studyProblem/layui学习笔记.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="610" column="13" lean-forward="true" selection-start-line="610" selection-start-column="13" selection-end-line="610" selection-end-column="13" />
+        <state relative-caret-position="100">
+          <caret line="5" column="100" selection-start-line="5" selection-start-column="100" selection-end-line="5" selection-end-column="100" />
         </state>
       </provider>
     </entry>
@@ -558,10 +587,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/studyProblem/调试接口.txt">
+    <entry file="file://$PROJECT_DIR$/studyProblem/获取部门树1.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" column="23" lean-forward="true" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/studyProblem/tsconfig.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/studyProblem/根据systemid查询角色列表.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="560">
-          <caret line="28" column="109" selection-start-line="28" selection-end-line="28" selection-end-column="109" />
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/studyProblem/获取部门树2.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="93" selection-start-column="93" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/studyProblem/修改用户状态.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/studyProblem/获取部门树3.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="73" selection-start-column="73" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/studyProblem/调试接口.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="50" column="58" selection-start-line="50" selection-start-column="58" selection-end-line="50" selection-end-column="58" />
         </state>
       </provider>
     </entry>
