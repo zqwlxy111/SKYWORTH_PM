@@ -106,127 +106,78 @@
 <!-- 注意：如果你直接复制所有代码到本地，上述js路径需要改成你本地的 -->
 
 <script>
-
     layui.config({
         base: "lib/layui/lay/mymodules/"
     }).use(['dtree', 'layer', 'jquery'], function () {
         var dtree = layui.dtree, layer = layui.layer, $ = layui.jquery;
 
-        $.ajax({
-            type: "GET",
-            url: "http://172.20.73.16:8080/safe_usercenter/safe/department/getDepartmentTree",
-            success: function (res) {
-                console.log(res);
-                //初始化树
-                var DTree = dtree.render({
-                    elem: "#slTree1",
-                    data: [res],
-                    response: {title: "text"}, // 这里指定了返回的数据格式，组件会根据这些值来替换返回JSON中的指定格式，从而读取信息
-                    // ficon: "-1",  // 隐藏一级图标
-                    // dot: false,  // 隐藏小圆点
-                    icon: -1,
-                    accordion: true,
-                    none: "接口数据异常，请检查服务是否开启",
-                    done: function (res) {
-                        console.log("libinglin shi zui shuai de !")
-                    }
-                });
+        // 定义一个nodeid变量
+        var nodeid = null;
 
-                $("#departmentChoice").on("click", function () {
-                    $(this).toggleClass("layui-form-selected");
-                    $("#departmentChoice-select").toggleClass("layui-show layui-anim layui-anim-upbit");
-                });
-                dtree.on("node(slTree1)", function (obj) {
-                    $("#input_department").val(obj.param.context);
-                    $("#depatment").toggleClass("layui-form-selected");
-                    $("#departmentChoice-select").toggleClass("layui-show layui-anim layui-anim-upbit");
-                });
-                // $("#departmentPeopleChoice").on("click", function () {
-                //     $(this).toggleClass("layui-form-selected");
-                //     $("#departmentPeopleChoice-select").toggleClass("layui-show layui-anim layui-anim-upbit");
-                // });
-                // dtree.on("node(slTree1)", function (obj) {
-                //     $("#input_departmentPeople").val(obj.param.context);
-                //     $("#depatmentPeople").toggleClass("layui-form-selected");
-                //     $("#departmentPeopleChoice-select").toggleClass("layui-show layui-anim layui-anim-upbit");
-                // });
-            }
-        });
-        // 点击节点触发回调，其中obj内包含丰富的数据，打开浏览器F12查看！
-        dtree.on("node('slTree1')" ,function(obj){
-            layer.msg(JSON.stringify(obj.param));
-            console.log(obj.param); // 点击当前节点传递的参数
-            console.log(obj.dom); // 当前节点的jquery对象
-            console.log(obj.childParams); // 当前节点的所有子节点参数
-            console.log(obj.parentParam); // 当前节点的父节点参数
+        $("#departmentChoice").on("click", function () {
+            $(this).toggleClass("layui-form-selected");
+            $("#departmentChoice-select").toggleClass("layui-show layui-anim layui-anim-upbit");
+            $.ajax({
+                type: "GET",
+                // url: "http://172.20.73.16:8080/safe_usercenter/safe/department/getDepartmentTree",
+                url: "https://www.easy-mock.com/mock/5cf1600306cab27e589f9550/safe_usercenter/safe/department/getDepartmentTree",
+                success: function (res) {
+                    console.log(res);
+                    //初始化树
+                    var DTree = dtree.render({
+                        elem: "#slTree1",
+                        data: [res],
+                        response: {title: "text"}, // 这里指定了返回的数据格式，组件会根据这些值来替换返回JSON中的指定格式，从而读取信息
+                        // ficon: "-1",  // 隐藏一级图标
+                        // dot: false,  // 隐藏小圆点
+                        icon: -1,
+                        line:true,
+                        accordion: true,
+                        none: "接口数据异常，请检查服务是否开启"
+                    });
+                }
+            });
         });
 
+
+        dtree.on("node(slTree1)", function (obj) {
+            $("#input_department").val(obj.param.context);
+            $("#department").toggleClass("layui-form-selected");
+            $("#departmentChoice-select").toggleClass("layui-show layui-anim layui-anim-upbit");
+            nodeid = obj.param.nodeId;
+        });
+
+
+        $("#departmentPeopleChoice").on("click", function () {
+            $(this).toggleClass("layui-form-selected");
+            $("#departmentPeopleChoice-select").toggleClass("layui-show layui-anim layui-anim-upbit");
+            $.ajax({
+                type: "GET",
+                // url: "http://172.20.73.16:8080/safe_usercenter/safe/department/getDepartmentTree",
+                url: "https://www.easy-mock.com/mock/5cf1600306cab27e589f9550/safe_usercenter/safe/department/getDepartmentTree?nodeId=" + nodeid,
+                success: function (res1) {
+                    console.log(res1);
+                    //初始化树
+                    var DTree = dtree.render({
+                        elem: "#slTree2",
+                        data: [res1],
+                        response: {title: "text"}, // 这里指定了返回的数据格式，组件会根据这些值来替换返回JSON中的指定格式，从而读取信息
+                        // ficon: "-1",  // 隐藏一级图标
+                        // dot: false,  // 隐藏小圆点
+                        icon: -1,
+                        accordion: true,
+                        none: "接口数据异常，请检查服务是否开启"
+                    });
+                }
+            });
+        });
+
+
+        dtree.on("node(slTree2)", function (obj1) {
+            $("#input_departmentPeople").val(obj1.param.context);
+            $("#departmentPeople").toggleClass("layui-form-selected");
+            $("#departmentPeopleChoice-select").toggleClass("layui-show layui-anim layui-anim-upbit");
+        });
     });
 </script>
-
-<!--<script>-->
-<!--    layui.use(['form', 'layedit', 'laydate'], function () {-->
-<!--        var form = layui.form-->
-<!--            , layer = layui.layer-->
-<!--            , layedit = layui.layedit-->
-<!--            , laydate = layui.laydate;-->
-
-<!--        //日期-->
-<!--        laydate.render({-->
-<!--            elem: '#date'-->
-<!--        });-->
-<!--        laydate.render({-->
-<!--            elem: '#date1'-->
-<!--        });-->
-
-<!--        //创建一个编辑器-->
-<!--        var editIndex = layedit.build('LAY_demo_editor');-->
-
-<!--        //自定义验证规则-->
-<!--        form.verify({-->
-<!--            title: function (value) {-->
-<!--                if (value.length < 5) {-->
-<!--                    return '标题至少得5个字符啊';-->
-<!--                }-->
-<!--            }-->
-<!--            , pass: [-->
-<!--                /^[\S]{6,12}$/-->
-<!--                , '密码必须6到12位，且不能出现空格'-->
-<!--            ]-->
-<!--            , content: function (value) {-->
-<!--                layedit.sync(editIndex);-->
-<!--            }-->
-<!--        });-->
-
-<!--        //监听指定开关-->
-<!--        form.on('switch(switchTest)', function (data) {-->
-<!--            layer.msg('开关checked：' + (this.checked ? 'true' : 'false'), {-->
-<!--                offset: '6px'-->
-<!--            });-->
-<!--            layer.tips('温馨提示：请注意开关状态的文字可以随意定义，而不仅仅是ON|OFF', data.othis)-->
-<!--        });-->
-
-<!--        //监听提交-->
-<!--        form.on('submit(demo1)', function (data) {-->
-<!--            layer.alert(JSON.stringify(data.field), {-->
-<!--                title: '最终的提交信息'-->
-<!--            })-->
-<!--            return false;-->
-<!--        });-->
-
-<!--        //表单初始赋值-->
-<!--        form.val('example', {-->
-<!--            "username": "贤心" // "name": "value"-->
-<!--            , "password": "123456"-->
-<!--            , "interest": 1-->
-<!--            , "like[write]": true //复选框选中状态-->
-<!--            , "close": true //开关状态-->
-<!--            , "sex": "女"-->
-<!--            , "desc": "我爱 layui"-->
-<!--        })-->
-
-
-<!--    });-->
-<!--</script>-->
-
 </html>

@@ -7,187 +7,12 @@
   <component name="ChangeListManager">
     <list default="true" id="6ba59dc0-2a53-4c9e-bf04-bf7dd5821a3c" name="默认更改列表" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/_config.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/cascader/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/cascader/cascader.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/cascader/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/dropdown/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/dropdown/dropdown.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/dropdown/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/eleTree/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/eleTree/eleTree.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/eleTree/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/eleTree/test.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/eleTree/tree.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/images/eleTree-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/images/eleTree-10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/images/eleTree-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/images/eleTree-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/images/eleTree-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/images/eleTree-5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/images/eleTree-6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/css/layui.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/css/layui.mobile.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/css/modules/code.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/css/modules/laydate/default/font.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/css/modules/laydate/default/laydate.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/css/modules/layer/default/icon-ext.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/css/modules/layer/default/icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/css/modules/layer/default/layer.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/css/modules/layer/default/loading-0.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/css/modules/layer/default/loading-1.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/css/modules/layer/default/loading-2.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/font/iconfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/font/iconfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/font/iconfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/font/iconfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/0.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/1.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/10.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/11.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/12.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/13.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/14.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/15.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/16.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/17.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/18.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/19.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/2.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/20.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/21.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/22.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/23.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/24.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/25.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/26.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/27.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/28.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/29.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/3.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/30.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/31.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/32.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/33.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/34.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/35.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/36.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/37.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/38.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/39.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/4.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/40.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/41.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/42.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/43.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/44.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/45.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/46.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/47.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/48.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/49.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/5.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/50.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/51.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/52.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/53.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/54.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/55.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/56.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/57.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/58.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/59.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/6.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/60.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/61.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/62.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/63.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/64.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/65.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/66.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/67.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/68.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/69.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/7.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/70.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/71.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/8.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/images/face/9.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/lay/modules/carousel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/lay/modules/code.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/lay/modules/colorpicker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/lay/modules/element.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/lay/modules/flow.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/lay/modules/form.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/lay/modules/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/lay/modules/laydate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/lay/modules/layedit.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/lay/modules/layer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/lay/modules/laypage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/lay/modules/laytpl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/lay/modules/mobile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/lay/modules/mobile/layer-mobile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/lay/modules/mobile/layim-mobile-open.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/lay/modules/mobile/upload-mobile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/lay/modules/mobile/zepto.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/lay/modules/rate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/lay/modules/slider.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/lay/modules/table.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/lay/modules/tree.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/lay/modules/upload.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/lay/modules/util.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/lay/mymodules/cascader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/lay/mymodules/dropdown.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/lay/mymodules/eleTree.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/lay/mymodules/step.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/layui/layui.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/step/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/step/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/eleTree/step/step.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/layui_ext/dist/dtree.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/layui_ext/dtree/dtree.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/layui_ext/dtree/dtree.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/layui_ext/dtree/font/dtreefont.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/layui_ext/dtree/font/dtreefont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/layui_ext/dtree/font/dtreefont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/layui_ext/dtree/font/dtreefont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/layui_ext/dtree/font/dtreefont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/layui_ext/dtree/font/icons.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extend/layui_ext/dtree/开发者日志.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/layui/css/layui.css" beforeDir="false" afterPath="$PROJECT_DIR$/lib/layui/css/layui.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/layui/css/layui.mobile.css" beforeDir="false" afterPath="$PROJECT_DIR$/lib/layui/css/layui.mobile.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/layui/css/modules/code.css" beforeDir="false" afterPath="$PROJECT_DIR$/lib/layui/css/modules/code.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/layui/css/modules/laydate/default/laydate.css" beforeDir="false" afterPath="$PROJECT_DIR$/lib/layui/css/modules/laydate/default/laydate.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/layui/css/modules/layer/default/layer.css" beforeDir="false" afterPath="$PROJECT_DIR$/lib/layui/css/modules/layer/default/layer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/layui/font/iconfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/lib/layui/font/iconfont.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/layui/font/iconfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/lib/layui/font/iconfont.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/layui/font/iconfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/lib/layui/font/iconfont.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/layui/font/iconfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/lib/layui/font/iconfont.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/layui/lay/modules/carousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/layui/lay/modules/carousel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/layui/lay/modules/code.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/layui/lay/modules/code.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/layui/lay/modules/colorpicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/layui/lay/modules/colorpicker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/layui/lay/modules/element.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/layui/lay/modules/element.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/layui/lay/modules/flow.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/layui/lay/modules/flow.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/layui/lay/modules/form.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/layui/lay/modules/form.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/layui/lay/modules/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/layui/lay/modules/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/layui/lay/modules/laydate.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/layui/lay/modules/laydate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/layui/lay/modules/layedit.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/layui/lay/modules/layedit.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/layui/lay/modules/layer.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/layui/lay/modules/layer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/layui/lay/modules/laypage.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/layui/lay/modules/laypage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/layui/lay/modules/laytpl.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/layui/lay/modules/laytpl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/layui/lay/modules/mobile.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/layui/lay/modules/mobile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/layui/lay/modules/rate.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/layui/lay/modules/rate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/layui/lay/modules/slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/layui/lay/modules/slider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/layui/lay/modules/table.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/layui/lay/modules/table.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/layui/lay/modules/tree.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/layui/lay/modules/tree.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/layui/lay/modules/upload.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/layui/lay/modules/upload.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/layui/lay/modules/util.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/layui/lay/modules/util.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/layui/layui.all.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/layui/layui.all.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/layui/layui.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/layui/layui.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Product-approval-addPeople.html" beforeDir="false" afterPath="$PROJECT_DIR$/Product-approval-addPeople.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/dtree.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/dtree.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/dtreefont.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/dtreefont.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/dtreefont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/css/dtreefont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/layui/lay/mymodules/dtree.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/layui/lay/mymodules/dtree.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studyProblem/layui学习笔记.txt" beforeDir="false" afterPath="$PROJECT_DIR$/studyProblem/layui学习笔记.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -202,13 +27,13 @@
     <favorites_list name="SKYWORTH_PM" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.33789062">
+    <splitter split-orientation="horizontal" split-proportion="0.1">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/jons/tsconfig.json">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="777">
+                <state relative-caret-position="12810">
                   <caret line="610" column="13" selection-start-line="610" selection-start-column="13" selection-end-line="610" selection-end-column="13" />
                 </state>
               </provider>
@@ -217,8 +42,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/studyProblem/获取部门树1.json">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-370">
-                  <caret line="13" column="23" lean-forward="true" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+                <state relative-caret-position="21">
+                  <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
                 </state>
               </provider>
             </entry>
@@ -240,7 +65,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/studyProblem/调试接口.txt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="139">
+                <state relative-caret-position="1050">
                   <caret line="50" column="58" selection-start-line="50" selection-start-column="58" selection-end-line="50" selection-end-column="58" />
                 </state>
               </provider>
@@ -250,33 +75,18 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Product-approval-addPeople.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-1827">
-                  <caret line="121" column="37" lean-forward="true" selection-start-line="121" selection-start-column="37" selection-end-line="121" selection-end-column="37" />
+                <state relative-caret-position="-155">
+                  <caret line="133" column="34" lean-forward="true" selection-start-line="133" selection-start-column="34" selection-end-line="133" selection-end-column="34" />
                   <folding>
                     <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
                     <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
                     <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/TreeTest.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="449">
-                  <caret line="60" column="30" lean-forward="true" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="30" />
-                  <folding>
-                    <element signature="n#style#0;n#fieldset#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="e#1118#1307#0" />
-                    <element signature="e#8629#8685#0" />
                   </folding>
                 </state>
               </provider>
@@ -299,6 +109,7 @@
     <findStrings>
       <find>site-demo-button</find>
       <find>直接选择</find>
+      <find>depatment</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -371,7 +182,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.HTML" />
+    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -419,11 +230,15 @@
       <workItem from="1559175056303" duration="20647000" />
       <workItem from="1559265255624" duration="8200000" />
       <workItem from="1559402040545" duration="3085000" />
+      <workItem from="1559479511865" duration="21000" />
+      <workItem from="1559481340046" duration="191000" />
+      <workItem from="1559485295999" duration="3983000" />
+      <workItem from="1559489559807" duration="542000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72844000" />
+    <option name="totallyTimeSpent" value="77581000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -467,7 +282,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/TreeTest.html</url>
           <line>36</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
@@ -511,12 +325,8 @@
     <entry file="file://E:/eleTree/layui/lay/mymodules/eleTree.js" />
     <entry file="file://E:/dtree_v2.5.0/layui_ext/dtree/dtree.js" />
     <entry file="file://$PROJECT_DIR$/tsconfig.json" />
-    <entry file="file://$PROJECT_DIR$/lib/extend/eleTree/eleTree/eleTree.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/extend/eleTree/favicon.ico">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/extend/eleTree/eleTree/eleTree.css" />
+    <entry file="file://$PROJECT_DIR$/lib/extend/eleTree/favicon.ico" />
     <entry file="file://$PROJECT_DIR$/eleTree/eleTree.css" />
     <entry file="file://$PROJECT_DIR$/css/eleTree.css">
       <provider selected="true" editor-type-id="text-editor" />
@@ -539,103 +349,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/extend/eleTree/eleTree/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="569" column="11" lean-forward="true" selection-start-line="569" selection-start-column="11" selection-end-line="569" selection-end-column="11" />
-          <folding>
-            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#pre#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#fieldset#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#legend#0;n#fieldset#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#table#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#colgroup#0;n#table#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#thead#0;n#table#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#tr#0;n#thead#0;n#table#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#tr#1;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#tr#2;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#tr#3;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#tr#4;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#tr#5;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#tr#6;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#tr#7;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#tr#8;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#tr#9;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#tr#10;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#tr#11;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#tr#12;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#tr#13;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#tr#14;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#tr#15;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#tr#16;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#td#2;n#tr#16;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#tr#17;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#tr#18;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#tr#19;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#td#2;n#tr#19;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#tr#20;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#td#3;n#tr#20;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#fieldset#2;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#legend#0;n#fieldset#2;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#table#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#colgroup#0;n#table#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#thead#0;n#table#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#tr#0;n#thead#0;n#table#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#tbody#0;n#table#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#tr#0;n#tbody#0;n#table#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#tr#1;n#tbody#0;n#table#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#tr#2;n#tbody#0;n#table#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#tr#3;n#tbody#0;n#table#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#tr#4;n#tbody#0;n#table#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#tr#5;n#tbody#0;n#table#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#td#1;n#tr#5;n#tbody#0;n#table#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#pre#0;n#td#1;n#tr#5;n#tbody#0;n#table#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#tr#6;n#tbody#0;n#table#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#td#1;n#tr#6;n#tbody#0;n#table#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#pre#0;n#td#1;n#tr#6;n#tbody#0;n#table#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#tr#7;n#tbody#0;n#table#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#td#1;n#tr#7;n#tbody#0;n#table#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#pre#0;n#td#1;n#tr#7;n#tbody#0;n#table#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#fieldset#3;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#legend#0;n#fieldset#3;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#pre#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#fieldset#4;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#legend#0;n#fieldset#4;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#pre#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#fieldset#5;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#legend#0;n#fieldset#5;n#body#0;n#html#0;n#!!top" />
-            <element signature="e#16129#17141#0" />
-            <element signature="e#16147#16847#0" />
-            <element signature="e#16240#16829#0" />
-            <element signature="e#16266#16807#0" />
-            <element signature="e#16428#16781#0" />
-            <element signature="e#16462#16589#0" />
-            <element signature="e#16623#16751#0" />
-            <element signature="e#16865#17127#0" />
-            <element signature="e#16958#17109#0" />
-            <element signature="e#16984#17087#0" />
-            <element signature="e#17182#17292#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/extend/eleTree/eleTree/index.html" />
     <entry file="file://$PROJECT_DIR$/lib/extend123/eleTree/eleTree/index.html" />
     <entry file="file://$PROJECT_DIR$/admin-cate.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1140" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/extend/eleTree/layui/layui.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/extend/eleTree/layui/layui.js" />
     <entry file="file://$PROJECT_DIR$/New-Domestic-products.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-480">
@@ -679,13 +400,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/extend/eleTree/layui/css/layui.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-375">
-          <caret line="182" column="1" selection-start-line="182" selection-start-column="1" selection-end-line="182" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/extend/eleTree/layui/css/layui.css" />
     <entry file="file://$PROJECT_DIR$/css/dtree.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -728,18 +443,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eleTree/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9870">
-          <caret line="564" column="32" selection-start-line="564" selection-start-column="32" selection-end-line="564" selection-end-column="32" />
-          <folding>
-            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#pre#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dtreeTest.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1008">
@@ -773,51 +476,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/studyProblem/调试接口.txt">
+    <entry file="file://$PROJECT_DIR$/TreeTest.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="50" column="58" selection-start-line="50" selection-start-column="58" selection-end-line="50" selection-end-column="58" />
+        <state relative-caret-position="1260">
+          <caret line="60" column="30" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="30" />
+          <folding>
+            <element signature="n#style#0;n#fieldset#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jons/tsconfig.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="777">
+        <state relative-caret-position="12810">
           <caret line="610" column="13" selection-start-line="610" selection-start-column="13" selection-end-line="610" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eleTree/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9870">
+          <caret line="564" column="32" selection-start-line="564" selection-start-column="32" selection-end-line="564" selection-end-column="32" />
+          <folding>
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#pre#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/studyProblem/调试接口.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1050">
+          <caret line="50" column="58" selection-start-line="50" selection-start-column="58" selection-end-line="50" selection-end-column="58" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/studyProblem/获取部门树1.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-370">
-          <caret line="13" column="23" lean-forward="true" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+        <state relative-caret-position="21">
+          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Product-approval-addPeople.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1827">
-          <caret line="121" column="37" lean-forward="true" selection-start-line="121" selection-start-column="37" selection-end-line="121" selection-end-column="37" />
+        <state relative-caret-position="-155">
+          <caret line="133" column="34" lean-forward="true" selection-start-line="133" selection-start-column="34" selection-end-line="133" selection-end-column="34" />
           <folding>
             <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TreeTest.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="60" column="30" lean-forward="true" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="30" />
-          <folding>
-            <element signature="n#style#0;n#fieldset#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#1118#1307#0" />
-            <element signature="e#8629#8685#0" />
           </folding>
         </state>
       </provider>
