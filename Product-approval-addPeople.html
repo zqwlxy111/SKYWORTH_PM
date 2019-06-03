@@ -38,64 +38,79 @@
 </head>
 <body>
 
-<!--模块选择-->
-<form class="layui-form layui-form-pane" action="">
-    <div class="layui-form-item">
-        <label class="layui-form-label">所属模块</label>
-        <div class="layui-input-inline" style="width: 60%">
-            <select name="interest" lay-filter="moduleChoice">
-                <option value=""></option>
-                <option value="0" selected="">业务模块</option>
-                <option value="1">计划模块</option>
-                <option value="2">质量模块</option>
-                <option value="3">工程模块</option>
-                <option value="4">生产模块</option>
-            </select>
-        </div>
-    </div>
-</form>
-
-<!--部门选择-->
-<div class="layui-form layui-form-pane">
-    <div class="layui-form-item">
-        <label class="layui-form-label">所属部门</label>
-        <div class="layui-input-inline" style="width: 60%">
-            <div class="layui-unselect layui-form-select" id="departmentChoice">
-                <div class="layui-select-title">
-                    <input type="text" name="department" id="input_department" placeholder="请选择" readonly=""
-                           class="layui-input layui-unselect">
-                    <i class="layui-edge"></i>
-                </div>
+<div class="layui-container" style="margin-left: 6%; margin-top: 6%">
+    <!--模块选择-->
+    <form class="layui-form layui-form-pane" action="">
+        <div class="layui-form-item">
+            <label class="layui-form-label">所属模块</label>
+            <div class="layui-input-inline" style="width: 65%">
+                <select name="interest" lay-filter="moduleChoice">
+                    <option value=""></option>
+                    <option value="0" selected="">业务模块</option>
+                    <option value="1">计划模块</option>
+                    <option value="2">质量模块</option>
+                    <option value="3">工程模块</option>
+                    <option value="4">生产模块</option>
+                </select>
             </div>
-            <div class="layui-card select-test" id="departmentChoice-select">
-                <div class="layui-card-body">
-                    <div id="toolbarDiv1">
-                        <ul id="slTree1" class="dtree" data-id="0" style="width: 100%;"></ul>
+        </div>
+    </form>
+
+    <!--部门选择-->
+    <div class="layui-form layui-form-pane">
+        <div class="layui-form-item">
+            <label class="layui-form-label">所属部门</label>
+            <div class="layui-input-inline" style="width: 65%">
+                <div class="layui-unselect layui-form-select" id="departmentChoice">
+                    <div class="layui-select-title">
+                        <input type="text" name="department" id="input_department" placeholder="请选择部门" readonly=""
+                               class="layui-input layui-unselect">
+                        <i class="layui-edge"></i>
+                    </div>
+                </div>
+                <div class="layui-card select-test" id="departmentChoice-select">
+                    <div class="layui-card-body">
+                        <div id="toolbarDiv1">
+                            <ul id="slTree1" class="dtree" data-id="0" style="width: 100%;"></ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<!--人员选择-->
-<div class="layui-form layui-form-pane">
-    <div class="layui-form-item">
-        <label class="layui-form-label">部门人员</label>
-        <div class="layui-input-inline" style="width: 60%">
-            <div class="layui-unselect layui-form-select" id="departmentPeopleChoice">
-                <div class="layui-select-title">
-                    <input type="text" name="departmentPeople" id="input_departmentPeople" placeholder="请选择" readonly=""
-                           class="layui-input layui-unselect">
-                    <i class="layui-edge"></i>
-                </div>
+    <!--人员选择-->
+    <div class="layui-form layui-form-pane">
+        <div class="layui-form-item">
+            <label class="layui-form-label">部门人员</label>
+            <div class="layui-input-inline" style="width: 65%">
+                <select name="quiz" id="departmentPeopleChoice">
+                    <option value="">请选择人员</option>
+                </select>
+                <!--            <div class="layui-unselect layui-form-select" id="departmentPeopleChoice">-->
+                <!--                <div class="layui-select-title">-->
+                <!--                    <input type="text" name="departmentPeople" id="input_departmentPeople" placeholder="请选择" readonly=""-->
+                <!--                           class="layui-input layui-unselect">-->
+                <!--                    <i class="layui-edge"></i>-->
+                <!--                </div>-->
+                <!--            </div>-->
+                <!--            <div class="layui-card select-test" id="departmentPeopleChoice-select">-->
+                <!--                <div class="layui-card-body">-->
+                <!--                    <div id="toolbarDiv2">-->
+                <!--                        <ul id="slTree2" class="dtree" data-id="0" style="width: 100%;"></ul>-->
+                <!--                    </div>-->
+                <!--                </div>-->
+                <!--            </div>-->
             </div>
-            <div class="layui-card select-test" id="departmentPeopleChoice-select">
-                <div class="layui-card-body">
-                    <div id="toolbarDiv2">
-                        <ul id="slTree2" class="dtree" data-id="0" style="width: 100%;"></ul>
-                    </div>
-                </div>
+        </div>
+    </div>
+
+    <!--人员职责-->
+    <div class="layui-form layui-form-pane">
+        <div class="layui-form-item layui-form-text" style="width: 92%;">
+            <label class="layui-form-label" >人员职责</label>
+            <div class="layui-input-block">
+                <textarea placeholder="请输入内容" class="layui-textarea"></textarea>
             </div>
         </div>
     </div>
@@ -108,76 +123,74 @@
 <script>
     layui.config({
         base: "lib/layui/lay/mymodules/"
-    }).use(['dtree', 'layer', 'jquery'], function () {
-        var dtree = layui.dtree, layer = layui.layer, $ = layui.jquery;
+    }).use(['dtree', 'form', 'layer', 'jquery'], function () {
+        var dtree = layui.dtree, layer = layui.layer, form = layui.form, $ = layui.jquery;
 
-        // 定义一个nodeid变量
-        var nodeid = null;
+        // 定义一个departmentid变量
+        var departmentId = null;
 
-        $("#departmentChoice").on("click", function () {
-            $(this).toggleClass("layui-form-selected");
-            $("#departmentChoice-select").toggleClass("layui-show layui-anim layui-anim-upbit");
-            $.ajax({
-                type: "GET",
-                // url: "http://172.20.73.16:8080/safe_usercenter/safe/department/getDepartmentTree",
-                url: "https://www.easy-mock.com/mock/5cf1600306cab27e589f9550/safe_usercenter/safe/department/getDepartmentTree",
-                success: function (res) {
-                    console.log(res);
-                    //初始化树
-                    var DTree = dtree.render({
-                        elem: "#slTree1",
-                        data: [res],
-                        response: {title: "text"}, // 这里指定了返回的数据格式，组件会根据这些值来替换返回JSON中的指定格式，从而读取信息
-                        // ficon: "-1",  // 隐藏一级图标
-                        // dot: false,  // 隐藏小圆点
-                        icon: -1,
-                        line:true,
-                        accordion: true,
-                        none: "接口数据异常，请检查服务是否开启"
-                    });
-                }
-            });
+        $.ajax({
+            type: "GET",
+            url: "http://172.20.73.16:8080/safe_usercenter/safe/department/getDepartmentTree",
+            // url: "https://www.easy-mock.com/mock/5cf1600306cab27e589f9550/safe_usercenter/safe/department/getDepartmentTree",
+            success: function (res) {
+                console.log(res);
+                //初始化树
+                var DTree = dtree.render({
+                    elem: "#slTree1",
+                    data: [res],
+                    response: {title: "text"}, // 这里指定了返回的数据格式，组件会根据这些值来替换返回JSON中的指定格式，从而读取信息
+                    // ficon: "-1",  // 隐藏一级图标
+                    // dot: false,  // 隐藏小圆点
+                    icon: -1,
+                    line: true,
+                    accordion: false,
+                    cache: true,
+                    initLevel: 8
+                });
+            }
         });
 
+        $("#departmentChoice").on("click", function () {
+            $(this).toggleClass("layui-form-selected"); // 控制旁边的小三角符号
+            $("#departmentChoice-select").toggleClass("layui-show layui-anim layui-anim-upbit"); // show控制select下拉框的是否显示，anim和upbit控制显示的动画效果
+            $(".layui-form-selected").toggleClass("layui-form-selected");
+        });
 
         dtree.on("node(slTree1)", function (obj) {
             $("#input_department").val(obj.param.context);
             $("#department").toggleClass("layui-form-selected");
             $("#departmentChoice-select").toggleClass("layui-show layui-anim layui-anim-upbit");
-            nodeid = obj.param.nodeId;
-        });
-
-
-        $("#departmentPeopleChoice").on("click", function () {
-            $(this).toggleClass("layui-form-selected");
-            $("#departmentPeopleChoice-select").toggleClass("layui-show layui-anim layui-anim-upbit");
+            departmentId = obj.param.nodeId;
             $.ajax({
                 type: "GET",
-                // url: "http://172.20.73.16:8080/safe_usercenter/safe/department/getDepartmentTree",
-                url: "https://www.easy-mock.com/mock/5cf1600306cab27e589f9550/safe_usercenter/safe/department/getDepartmentTree?nodeId=" + nodeid,
+                url: "http://172.20.73.16:8080/safe_usercenter/safe/user/getUsersListByDepartmentId?departmentId=" + departmentId + "&start=0&limit=100",
+                // url: "https://www.easy-mock.com/mock/5cf1600306cab27e589f9550/safe_usercenter/safe/department/getDepartmentTree?nodeId=" + nodeid,
                 success: function (res1) {
-                    console.log(res1);
-                    //初始化树
-                    var DTree = dtree.render({
-                        elem: "#slTree2",
-                        data: [res1],
-                        response: {title: "text"}, // 这里指定了返回的数据格式，组件会根据这些值来替换返回JSON中的指定格式，从而读取信息
-                        // ficon: "-1",  // 隐藏一级图标
-                        // dot: false,  // 隐藏小圆点
-                        icon: -1,
-                        accordion: true,
-                        none: "接口数据异常，请检查服务是否开启"
-                    });
+                    $("#departmentPeopleChoice").empty();
+                    $("#departmentPeopleChoice").append("<option value=''>请选择人员</option>");
+                    for (var i = 0; i < res1.result.length; i++) {
+
+                        $("#departmentPeopleChoice").append("<option value='test' type='text'>" + res1.result[i].realName + "</option>");
+
+                    }
+                    // 对目标form表单进行动态的重新渲染
+                    form.render();
+
                 }
             });
         });
+        // $("#departmentPeopleChoice").on("click", function () {
+        //     $(this).toggleClass("layui-form-selected");
+        //     $("#departmentPeopleChoice-select").toggleClass("layui-show layui-anim layui-anim-upbit");
+        //
+        // });
 
-
-        dtree.on("node(slTree2)", function (obj1) {
-            $("#input_departmentPeople").val(obj1.param.context);
-            $("#departmentPeople").toggleClass("layui-form-selected");
-            $("#departmentPeopleChoice-select").toggleClass("layui-show layui-anim layui-anim-upbit");
-        });
+        // dtree.on("node(slTree2)", function (obj1) {
+        //     $("#input_departmentPeople").val(obj1.param.context);
+        //     $("#departmentPeople").toggleClass("layui-form-selected");
+        //     $("#departmentPeopleChoice-select").toggleClass("layui-show layui-anim layui-anim-upbit");
+        // });
     });
 </script>
 </html>
