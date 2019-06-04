@@ -9,7 +9,7 @@
 
 
     <link rel="stylesheet" href="lib/layui/css/layui.css" media="all">
-<!--    <link rel="stylesheet" type="text/css" href="css/xadmin.css"/>-->
+    <!--    <link rel="stylesheet" type="text/css" href="css/xadmin.css"/>-->
     <!-- 注意：如果你直接复制所有代码到本地，上述css路径需要改成你本地的 -->
 
 
@@ -28,7 +28,7 @@
             <fieldset class="layui-elem-field layui-field-title" style="margin-top: -9px;">
                 <legend>内销产品立项</legend>
             </fieldset>
-            <form class="layui-form" action="" lay-filter="example">
+            <form class="layui-form" action="" lay-filter="New-Domestic-products">
                 <div class="layui-form-item">
                     <label class="layui-form-label">项目名称</label>
                     <div class="layui-input-block">
@@ -112,14 +112,14 @@
                         <label class="layui-form-label">项目组长</label>
                         <div class="layui-input-inline">
                             <input type="text" name="Efficiency-target" lay-verify="required" autocomplete="off"
-                                   class="layui-input">
+                                   class="layui-input" id="libinglin">
                         </div>
                     </div>
                     <div class="layui-inline">
                         <label class="layui-form-label">项目负责人</label>
                         <div class="layui-input-inline">
                             <input type="text" name="Efficiency-target" lay-verify="required" autocomplete="off"
-                                   class="layui-input">
+                                   class="layui-input" id="libinglin1">
                         </div>
                     </div>
                 </div>
@@ -127,11 +127,11 @@
                     <legend>项目主要成员</legend>
                     <div class="layui-btn-group" style="margin: 15px 0px -6px 40px;">
                         <div class="site-demo-button" id="layerDemo" style="margin-bottom: 0;">
-<!--                            增加按钮-->
+                            <!--增加按钮-->
                             <div data-method="setTop" class="layui-btn layui-btn-sm">增加</div>
-<!--                            编辑按钮-->
-<!--                            <div data-method="setTop" class="layui-btn layui-btn-sm ">编辑</div>-->
-<!--                            删除按钮-->
+                            <!--编辑按钮-->
+                            <!--<div data-method="setTop" class="layui-btn layui-btn-sm ">编辑</div>-->
+                            <!--删除按钮-->
                             <div data-method="setTop" class="layui-btn layui-btn-sm">删除</div>
                         </div>
                     </div>
@@ -162,11 +162,12 @@
 <!-- 注意：如果你直接复制所有代码到本地，上述js路径需要改成你本地的 -->
 
 <script>
-    layui.use(['form', 'layedit', 'laydate'], function () {
+    layui.use(['form', 'layedit', 'layer', 'laydate'], function () {
         var form = layui.form,
             layer = layui.layer,
             layedit = layui.layedit,
             laydate = layui.laydate;
+        $ = layui.jquery;
 
         //日期
         laydate.render({
@@ -211,7 +212,7 @@
         });
 
         //表单初始赋值
-        form.val('example', {
+        form.val('New-Domestic-products', {
             "Item-category": "内销产品",
             "username": "内销产品" // "name": "value"
             ,
@@ -223,52 +224,77 @@
             ,
             "sex": "女",
             "desc": "我爱 layui"
-        })
-    });
-
-    layui.use('layer', function () { //独立版的layer无需执行这一句
-        var $ = layui.jquery;
+        });
 
         //触发事件
         var active = {
             setTop: function () {
-                var that = this;
-                //多窗口模式，层叠置顶
                 layer.open({
-                    type: 2 , //此处以iframe举例
+                    type: 2, //此处以iframe举例
                     title: '添加项目模块人员',
                     area: ['460px', '550px'],
                     shade: 0.8,
                     maxmin: true,
                     anim: 0,
+                    closeBtn: 2,
                     offset: 'auto',
                     //这里content是一个URL，如果你不想让iframe出现滚动条，你还可以content: ['http://sentsin.com', 'no']
                     content: 'Product-approval-addPeople.html',
-                    btn: ['继续弹出', '全部关闭'] //只是为了演示
-                    // ,
-                    // yes: function () {
-                    //     $(that).click();
-                    // },
                     // btn2: function () {
                     //     layer.closeAll();
                     // }
-                    ,
+
                     zIndex: layer.zIndex //重点1
                     ,
-                    success: function (layero) {
+                    success: function (layero,index) {
                         layer.setTop(layero); //重点2
+                    },
+                    cancel: function (index, layero) {
+                        if (confirm('确定要关闭么')) { //只有当点击confirm框的确定时，该层才会关闭
+                            layer.close(index);
+                        }
+                        return false;
                     }
                 });
             }
         };
 
         $('#layerDemo .layui-btn').on('click', function () {
-            // alert("S");
             var othis = $(this),
                 method = othis.data('method');
             active[method] ? active[method].call(this, othis) : '';
         });
 
+        // 添加组长和负责人点击框事件
+        $('#libinglin,#libinglin1').on("mouseover",function () {
+            $(this).css("cursor","pointer");
+        });
+        $('#libinglin,#libinglin1').on("click",function () {
+            layer.open({
+                type: 2, //此处以iframe举例
+                title: '添加项目模块人员',
+                area: ['460px', '500px'],
+                shade: 0.8,
+                maxmin: true,
+                anim: 0,
+                closeBtn: 2,
+                offset: 'auto',
+                //这里content是一个URL，如果你不想让iframe出现滚动条，你还可以content: ['http://sentsin.com', 'no']
+                content: 'Container-Add-People.html',
+                // btn2: function () {
+                //     layer.closeAll();
+                // }
+
+                zIndex: layer.zIndex //重点1
+                ,
+                success: function (layero,index) {
+                    layer.setTop(layero); //重点2
+                },
+                cancel: function (index, layero) {
+                    return true;
+                }
+            });
+        })
     });
 </script>
 
