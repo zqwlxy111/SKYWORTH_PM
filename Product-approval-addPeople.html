@@ -105,7 +105,7 @@
         <!--    确认提交按钮-->
         <div class="layui-form layui-form-pane">
             <div class="layui-form-item layui-form-text" style="width: 92%;">
-                <div class="layui-btn " lay-submit="" lay-filter="Personnel-submission" style="margin-left: 68%;">提交
+                <div class="layui-btn" lay-submit="" lay-filter="Personnel-submission" style="margin-left: 68%;">提交
                 </div>
             </div>
         </div>
@@ -136,7 +136,7 @@
             url: "http://172.20.73.16:8899/safe_usercenter/safe/department/getDepartmentTree",
             // url: "https://www.easy-mock.com/mock/5cf1600306cab27e589f9550/safe_usercenter/safe/department/getDepartmentTree",
             success: function (res) {
-                console.log(res);
+                // console.log(res);
                 //初始化树
                 var DTree = dtree.render({
                     elem: "#slTree1",
@@ -239,26 +239,19 @@
 
         // 提交监听
         form.on('submit(Personnel-submission)', function (selectdata) {
-            console.log(selectdata.field);
-            // var selectdataJson = [selectdata.field.module, selectdata.field.department, selectdata.field.departmentPeople, selectdata.field.PersonnelResponsibilities];
-            // var selectdataJsonRealname = ['模块名称','部门名称','部门人员','人员职责'];
-            // console.log(selectdataJson);
-            // for (var i = 0; i < selectdataJson.length; i++) {
-            //     if (selectdataJson[i] == '') {
-            //         layer.msg(selectdataJsonRealname[i]+'不能为空！', {
-            //             time: 850
-            //         });
-            //         return false;
-            //     }
-            // }
+            // console.log(selectdata.field);
             layer.msg('提交成功！', {
                 time: 680
             },function () {
+                var qwe = JSON.stringify(selectdata.field);
+                console.log(qwe);
+                console.log(parent);
                 // 通过index将iframe层关闭
-                var index = parent.layer.getFrameIndex(window.name);
-                parent.layer.close(index);
-                // 关闭后刷新父页面
-                parent.location.reload();
+                // var index = parent.layer.getFrameIndex(window.name);
+                // parent.layer.close(index);
+                // // 关闭后刷新父页面
+                // parent.location.reload();
+                // parent.table.reload();
             });
             return false; //阻止表单跳转。如果需要表单跳转，去掉这段即可。
         });
