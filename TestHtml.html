@@ -1,325 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="utf-8">
-    <title>内销产品立项</title>
+    <title>layui</title>
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-
     <link rel="stylesheet" href="lib/layui/css/layui.css" media="all">
-    <!--    <link rel="stylesheet" type="text/css" href="css/xadmin.css"/>-->
     <!-- 注意：如果你直接复制所有代码到本地，上述css路径需要改成你本地的 -->
-
-
-    <!--[if lt IE 9]>
-    <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
-    <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
 </head>
 <body>
-<!-- layui-fluid 已经包含padding值在里面，无需再添加div设置padding值 -->
-<div class="layui-fluid">
-    <div class="layui-card">
-        <div class="layui-card-body">
-            <ins class="adsbygoogle" style="display:inline-block;width:970px" data-ad-client="ca-pub-6111334333458862"
-                 data-ad-slot="3820120620"></ins>
-            <fieldset class="layui-elem-field layui-field-title" style="margin-top: -9px;">
-                <legend>内销产品立项</legend>
-            </fieldset>
-            <form class="layui-form" action="" lay-filter="New-Domestic-products">
-                <div class="layui-form-item">
-                    <label class="layui-form-label">项目名称</label>
-                    <div class="layui-input-block">
-                        <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入立项项目名称"
-                               class="layui-input">
-                    </div>
-                </div>
+<table class="layui-hide" id="test"></table>
 
-                <div class="layui-form-item">
-                    <label class="layui-form-label">项目类别</label>
-                    <div class="layui-input-block">
-                        <input type="text" name="Item-category" lay-verify="required" autocomplete="off"
-                               class="layui-input">
-                    </div>
-                </div>
-
-                <div class="layui-form-item">
-                    <div class="layui-block">
-                        <label class="layui-form-label">产品定位</label>
-                        <div class="layui-input-block">
-                            <input type="text" name="product-orientation" lay-verify="required" autocomplete="off"
-                                   class="layui-input">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="layui-form-item layui-form-text">
-                    <label class="layui-form-label" style="text-align: left;">功能描述和要求</label>
-                    <div class="layui-input-block">
-                        <textarea placeholder="请输入内容" class="layui-textarea" style="height: 20px;"></textarea>
-                    </div>
-                </div>
-
-                <div class="layui-form-item">
-                    <div class="layui-block">
-                        <label class="layui-form-label" style="padding: 9px 7px;width: 85px;">产品进度计划</label>
-                        <div class="layui-input-block">
-                            <input type="text" name="Product-schedule" lay-verify="required" autocomplete="off"
-                                   class="layui-input">
-
-                        </div>
-                    </div>
-                </div>
-
-
-                <fieldset class="layui-elem-field">
-                    <legend>项目达成目标设定</legend>
-                    <div class="layui-field-box" style="padding: 10px 15px 10px 0px;">
-                        <div class="layui-form-item">
-                            <div class="layui-block">
-                                <label class="layui-form-label">进度目标</label>
-                                <div class="layui-input-block">
-                                    <input type="text" name="Progress-target" lay-verify="required" autocomplete="off"
-                                           class="layui-input">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="layui-form-item">
-                            <div class="layui-block">
-                                <label class="layui-form-label">质量目标</label>
-                                <div class="layui-input-block">
-                                    <input type="text" name="Quality-target" lay-verify="required" autocomplete="off"
-                                           class="layui-input">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="layui-form-item">
-                            <div class="layui-block">
-                                <label class="layui-form-label">效率目标</label>
-                                <div class="layui-input-block">
-                                    <input type="text" name="Efficiency-target" lay-verify="required" autocomplete="off"
-                                           class="layui-input">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </fieldset>
-
-                <div class="layui-form-item">
-                    <div class="layui-inline">
-                        <label class="layui-form-label">项目组长</label>
-                        <div class="layui-input-inline">
-                            <input type="text" name="Efficiency-target" lay-verify="required" autocomplete="off"
-                                   class="layui-input" id="libinglin">
-                        </div>
-                    </div>
-                    <div class="layui-inline">
-                        <label class="layui-form-label">项目负责人</label>
-                        <div class="layui-input-inline">
-                            <input type="text" name="Efficiency-target" lay-verify="required" autocomplete="off"
-                                   class="layui-input" id="libinglin1">
-                        </div>
-                    </div>
-                </div>
-                <fieldset class="layui-elem-field">
-                    <legend>项目主要成员</legend>
-                    <div class="layui-btn-group" style="margin: 15px 0px -6px 40px;">
-                        <div class="site-demo-button" id="layerDemo" style="margin-bottom: 0;">
-                            <!--增加按钮-->
-                            <div data-method="setTop" class="layui-btn layui-btn-sm">增加</div>
-                            <!--编辑按钮-->
-                            <!--<div data-method="setTop" class="layui-btn layui-btn-sm ">编辑</div>-->
-                            <!--删除按钮-->
-                            <div data-method="setTop" class="layui-btn layui-btn-sm">删除</div>
-                        </div>
-                    </div>
-                    <fieldset class="layui-elem-field layui-field-title" style="margin-top: 21px;">
-                        <legend style="font-size: 15px; margin-left: 50px;">业务模块</legend>
-                        <table class="layui-hide" id="test12"></table>
-                    </fieldset>
-                    <fieldset class="layui-elem-field layui-field-title" style="margin-top: 21px;">
-                        <legend style="font-size: 15px; margin-left: 50px;">计划模块</legend>
-                    </fieldset>
-                    <fieldset class="layui-elem-field layui-field-title" style="margin-top: 21px;">
-                        <legend style="font-size: 15px; margin-left: 50px;">质量模块</legend>
-                    </fieldset>
-                    <fieldset class="layui-elem-field layui-field-title" style="margin-top: 21px;">
-                        <legend style="font-size: 15px; margin-left: 50px;">工程模块</legend>
-                    </fieldset>
-                    <fieldset class="layui-elem-field layui-field-title" style="margin-top: 21px;">
-                        <legend style="font-size: 15px; margin-left: 50px;">生产模块</legend>
-                    </fieldset>
-                </fieldset>
-            </form>
-        </div>
+<script type="text/html" id="toolbarDemo">
+    <div class="layui-btn-container">
+        <a href="#" style="color: #00000063; font-size: 25px; cursor: default;">SKYWORTH</a>
     </div>
-</div>
+</script>
 
-</body>
+<!--		<script type="text/html" id="barDemo">-->
+<!--			<a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>-->
+<!--			<a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>-->
+<!--		</script>-->
+
 
 <script src="lib/layui/layui.js" charset="utf-8"></script>
 <!-- 注意：如果你直接复制所有代码到本地，上述js路径需要改成你本地的 -->
-
+sc
 <script>
-    layui.use(['form', 'layedit', 'layer','table', 'laydate'], function () {
-        var form = layui.form,
-            layer = layui.layer,
-            table = layui.table,
-            layedit = layui.layedit,
-            laydate = layui.laydate;
-        $ = layui.jquery;
-
-        //日期
-        laydate.render({
-            elem: '#date'
-        });
-        laydate.render({
-            elem: '#date1'
-        });
-
-        //创建一个编辑器
-        var editIndex = layedit.build('LAY_demo_editor');
-
-        //自定义验证规则
-        form.verify({
-            title: function (value) {
-                if (value.length < 5) {
-                    return '标题至少得5个字符啊';
-                }
-            },
-            pass: [
-                /^[\S]{6,12}$/, '密码必须6到12位，且不能出现空格'
-            ],
-            content: function (value) {
-                layedit.sync(editIndex);
-            }
-        });
-
-        //监听指定开关
-        form.on('switch(switchTest)', function (data) {
-            layer.msg('开关checked：' + (this.checked ? 'true' : 'false'), {
-                offset: '6px'
-            });
-            layer.tips('温馨提示：请注意开关状态的文字可以随意定义，而不仅仅是ON|OFF', data.othis)
-        });
-
-        //监听提交
-        form.on('submit(demo1)', function (data) {
-            layer.alert(JSON.stringify(data.field), {
-                title: '最终的提交信息'
-            });
-            return false;
-        });
-
-        //表单初始赋值
-        form.val('New-Domestic-products', {
-            "Item-category": "内销产品",
-            "username": "内销产品" // "name": "value"
-            ,
-            "password": "123456",
-            "interest": 1,
-            "like[write]": true //复选框选中状态
-            ,
-            "close": true //开关状态
-            ,
-            "sex": "女",
-            "desc": "我爱 layui"
-        });
-
-        //触发事件
-        var active = {
-            setTop: function () {
-                layer.open({
-                    type: 2, //此处以iframe举例
-                    title: '添加项目模块人员',
-                    area: ['460px', '550px'],
-                    shade: 0.8,
-                    maxmin: true,
-                    anim: 0,
-                    closeBtn: 2,
-                    offset: 'auto',
-                    //这里content是一个URL，如果你不想让iframe出现滚动条，你还可以content: ['http://sentsin.com', 'no']
-                    content: 'Product-approval-addPeople.html',
-                    // btn2: function () {
-                    //     layer.closeAll();
-                    // }
-
-                    zIndex: layer.zIndex //重点1
-                    ,
-                    success: function (layero,index) {
-
-                    },
-                    cancel: function (index, layero) {
-                        // if (confirm('确定要关闭么')) { //只有当点击confirm框的确定时，该层才会关闭
-                        //     layer.close(index);
-                        // }
-                        // return false;
-                    }
-                });
-            }
-        };
-
-        $('#layerDemo .layui-btn').on('click', function () {
-            var othis = $(this),
-                method = othis.data('method');
-            active[method] ? active[method].call(this, othis) : '';
-        });
-
-        // 添加组长和负责人点击框事件
-        $('#libinglin,#libinglin1').on("mouseover",function () {
-            $(this).css("cursor","pointer");
-        });
-        $('#libinglin,#libinglin1').on("click",function () {
-            layer.open({
-                type: 2, //此处以iframe举例
-                title: '添加项目模块人员',
-                area: ['460px', '500px'],
-                shade: 0.8,
-                maxmin: true,
-                anim: 0,
-                closeBtn: 2,
-                offset: 'auto',
-                //这里content是一个URL，如果你不想让iframe出现滚动条，你还可以content: ['http://sentsin.com', 'no']
-                content: 'Container-Add-People.html',
-                // btn2: function () {
-                //     layer.closeAll();
-                // }
-
-                zIndex: layer.zIndex //重点1
-                ,
-                success: function (layero,index) {
-                    layer.setTop(layero); //重点2
-                },
-                cancel: function (index, layero) {
-                    return true;
-                }
-            });
-        });
-
-        // table测试
-
-        var libinglin  = null;
-
-
+    layui.use('table', function() {
+        var table = layui.table;
+        var no = 0;
         table.render({
-            elem: '#test12',
-            data:[{"department":80,"username":"asdasd","PersonnelResponsibilities":"前端界面开发"},{"department":888,"username":"asdaswwww","PersonnelResponsibilities":"前端界面开发"}]
-            ,cellMinWidth: 80 //全局定义常规单元格的最小宽度
-            ,cols: [[
-                {
-                    checkbox: true,
-                    fixed: true,
-                    width:65
+            elem: '#test',
+            url: 'http://172.20.248.220:8088/dms/mes/dailySixPlan/query?_dc=1558343249271&factory=&lineCode=&model=&module=&screen=&workOrderNo=&orderNo=&st=0&ft=0',
+            page: true,
+            headers: {
+                token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyVG9rZW4iOiJ7XCJpZFwiOjUxLFwibmFtZVwiOlwibGliaW5nbGluXCIsXCJjb2RlXCI6XCJza3kyMDYxOTNcIixcImZpbHRlclwiOm51bGx9In0.ARKC424DcHGGTTQiiO7V6HVCq5Zj1yBMu2JHZTbKjjs'
+            },
+            response: {
+                statusCode: true //重新规定成功的状态码为 true，table 组件默认为 0
+            },
+            parseData: function(res) { //res 即为原始返回的数据
+                return {
+                    "code": res.success, //解析接口状态
+                    "msg": res.msg, //解析提示文本
+                    "count": res.total, //解析数据长度
+                    "data": res.result //解析数据列表
+                };
+            },
+            // where: {start:0},
+            height: 830, // 设置固定大小的高度
+            limit: 50, //默认十条数据一页
+            limits: [10, 20, 30, 50, 100], //数据分页条
+            cols: [
+                [
+                    //  {
+                    // 	checkbox: true,
+                    // 	fixed: true
+                    // },
+                    {
+                        field: 'zizeng',
+                        title: '序号',
+                        align: 'center',
+                        type: 'numbers'
+                    }, {
+                    field: 'lineCode',
+                    align: 'center',
+                    title: '线体名称',
+                    sort: true
+                }, {
+                    field: 'workOrderNo',
+                    align: 'center',
+                    title: '工单号'
+                }, {
+                    field: 'orderNo',
+                    align: 'center',
+                    title: '销单号'
+                }, {
+                    field: 'model',
+                    align: 'center',
+                    title: '机型'
+                }, {
+                    field: 'module',
+                    align: 'center',
+                    title: '机芯'
+                }, {
+                    field: 'screen',
+                    align: 'center',
+                    title: '配屏'
+                }, {
+                    field: 'country',
+                    align: 'center',
+                    title: '国家'
+                }, {
+                    field: 'productionMode',
+                    align: 'center',
+                    title: '生产方式'
+                }, {
+                    field: 'planQuantity',
+                    align: 'center',
+                    title: '计划产量'
+                }, {
+                    field: 'orderType',
+                    align: 'center',
+                    title: '工单结余'
                 }
-                ,{field:'department',  title: '部门', width:250, sort: true,align:'center'}
-                ,{field:'username',  title: '人员姓名' , width:300, sort: true,align:'center'}
-                ,{field:'PersonnelResponsibilities', title: '人员职责', sort: true,align:'center'}
-            ]]
+                    // , {
+                    // 	fixed: 'right',
+                    // 	title: '操作',
+                    // 	// toolbar: '#barDemo'
+                    // }
+                ]
+            ],
+            request: {
+                pageName: 'start' //页码的参数名称，默认：page
+                // limitName: 'nums' //每页数据量的参数名，默认：limit
+            },
+            toolbar: '#toolbarDemo' ,
+            defaultToolbar: ['filter', 'exports'], // 添加print为打印功能
+            done: function(res, curr, count) {
+                //如果是异步请求数据方式，res即为你接口返回的信息。
+                //如果是直接赋值的方式，res即为：{data: [], count: 99} data为当前页数据、count为数据总长度
+
+                console.log(res);
+
+                //得到当前页码
+                console.log(curr);
+
+                //得到数据总量
+                console.log(count);
+
+                //得到当前页面显示的总数量
+                console.log(this.limit);
+            }
         });
-        console.log(libinglin);
     });
 </script>
 
+</body>
 </html>

@@ -36,6 +36,9 @@
     </form>
   </div>
 
+  <script src="./js/util.js" charset="utf-8"></script>
+  <script src="./js/api.js" charset="utf-8"></script>
+
   <script>
     $(function () {
       layui.use('form', function () {
@@ -43,7 +46,7 @@
         //监听提交
         form.on('submit(login)', function (data) {
           // alert(888)
-          $.get('http://172.20.248.220:8088/dms/safe_usercenter/safe/user/login?systemId=2&username=' + $(
+          $.get('http://172.20.248.' + '220:8088/dms/safe_usercenter/safe/user/login?systemId=2&username=' + $(
               "#user")
             .val() + '&password=' + $("#passwd").val(),
             function (d) {
