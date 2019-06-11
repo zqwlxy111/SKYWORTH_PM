@@ -133,14 +133,22 @@
         // 通过ajax请求将tree组件默认加载到指定的元素中
         $.ajax({
             type: "GET",
-            url: "http://172.20.73.16:8899/safe_usercenter/safe/department/getDepartmentTree",
+            headers:{
+                "token":'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyVG9rZW4iOiJ7XCJpZFwiOjUxLFwibmFtZVwiOlwibGliaW5nbGluXCIsXCJjb2RlXCI6XCJza3kyMDYxOTNcIixcImZpbHRlclwiOm51bGx9In0.ARKC424DcHGGTTQiiO7V6HVCq5Zj1yBMu2JHZTbKjjs'
+            },
+            url: "http://172.20.248.220:8088/dms/safe_usercenter/safe/department/getDepartmentTree",
+            // url: "http://172.20.73.16:8899/safe_usercenter/safe/department/getDepartmentTree",
             // url: "https://www.easy-mock.com/mock/5cf1600306cab27e589f9550/safe_usercenter/safe/department/getDepartmentTree",
             success: function (res) {
                 // console.log(res);
                 //初始化树
+                // console.log(typeof res);
+                var libinglin = $.parseJSON(res);
+                console.log(libinglin);
+                console.log(typeof libinglin);
                 var DTree = dtree.render({
                     elem: "#slTree1",
-                    data: [res],
+                    data: [libinglin],
                     response: {title: "text"}, // 这里指定了返回的数据格式，组件会根据这些值来替换返回JSON中的指定格式，从而读取信息
                     // ficon: "-1",  // 隐藏一级图标
                     // dot: false,  // 隐藏小圆点
@@ -195,8 +203,11 @@
             // 点击tree组件节点之后发送ajax请求到指定的接口，动态添加html到option当中
             $.ajax({
                 type: "GET",
-                url: "http://172.20.73.16:8899/safe_usercenter/safe/user/getUsersListByDepartmentId?departmentId=" + departmentId + "&start=0&limit=100",
-                // url: "https://www.easy-mock.com/mock/5cf1600306cab27e589f9550/safe_usercenter/safe/department/getDepartmentTree?nodeId=" + nodeid,
+                headers:{
+                    "token":'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyVG9rZW4iOiJ7XCJpZFwiOjUxLFwibmFtZVwiOlwibGliaW5nbGluXCIsXCJjb2RlXCI6XCJza3kyMDYxOTNcIixcImZpbHRlclwiOm51bGx9In0.ARKC424DcHGGTTQiiO7V6HVCq5Zj1yBMu2JHZTbKjjs'
+                },
+                // url: "http://172.20.248.220:8088/dms/safe_usercenter/safe/user/getUsersListByDepartmentId?departmentId=" + departmentId + "&start=0&limit=100",
+                url: "https://www.easy-mock.com/mock/5cf1600306cab27e589f9550/safe_usercenter/safe/department/getDepartmentTree?nodeId=" + nodeid,
                 success: function (res1) {
                     $("#departmentPeopleChoice1").empty();
                     $("#departmentPeopleChoice1").append("<option value=''>请选择人员</option>");
